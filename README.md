@@ -13,6 +13,31 @@ flask --app app.app run
 
 Open <http://127.0.0.1:5000> to chat with the assistant. Provide questions about entry-level salaries, required skills, hiring trends, or interview preparation to receive sourced answers.
 
+## Job Skill Analysis CLI
+
+The repository now bundles a command-line replica of Satya Phanindra Kumar Kalaga's
+*Job Skill Analysis for Job Seekers* notebook powered by LAiSER. Run it to
+extract and visualise the most in-demand skills from your own CSV of job
+postings:
+
+```bash
+python scripts/job_skill_analysis.py \
+  --input path/to/job_postings.csv \
+  --model-id mistralai/Mistral-7B-Instruct-v0.1 \
+  --hf-token $HUGGINGFACE_TOKEN \
+  --output-dir outputs/skill_analysis
+```
+
+The script saves three artefacts inside `--output-dir`:
+
+- `skill_summary.csv`: frequency table of extracted skills.
+- `top_skills.png`: horizontal bar chart of the top-N skills (default: 20).
+- `skill_wordcloud.png`: quick visual overview of demand intensity.
+
+Supply your own Hugging Face token either with `--hf-token` or via the
+`HUGGINGFACEHUB_API_TOKEN` environment variable. GPU inference is optional: add
+`--use-gpu` if your environment supports it.
+
 ## Troubleshooting
 
 If pip fails with a Cython / build error while installing packages (for example errors mentioning "Cython" or "sklearn/... .pyx"), pip is trying to compile a package from source because a prebuilt wheel wasn't available for your Python/macOS combination. Common causes: using a very new Python (e.g. 3.13) or an Apple Silicon macOS where wheels may be on conda-forge first.
