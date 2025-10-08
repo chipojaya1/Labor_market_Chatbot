@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Career Copilot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <h1>Data Science Career Copilot</h1>
+        <p>
+          Ask about entry-level salaries, skills, hiring trends, or interview prep. The
+          assistant will respond with sourced insights from curated BLS and Glassdoor datasets.
+        </p>
+      </section>
+      <section class="chat-panel">
+        <div id="conversation" class="conversation" aria-live="polite"></div>
+        <form id="question-form" class="question-form">
+          <label for="question" class="sr-only">Ask a question</label>
+          <input
+            type="text"
+            id="question"
+            name="question"
+            placeholder="e.g. What is the entry-level salary range in California?"
+            required
+            autocomplete="off"
+          />
+          <button type="submit">Ask</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      const conversation = document.getElementById("conversation");
+      const form = document.getElementById("question-form");
+
+      function appendMessage(role, text, sources = []) {
+        const wrapper = document.createElement("div");
+        wrapper.className = `message ${role}`;
+
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.textContent = text;
+        wrapper.appendChild(bubble);
+
+        if (sources.length > 0) {
+          const list = document.createElement("ul");
+          list.className = "sources";
+          sources.forEach((source) => {
+            const item = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = source.source_url;
+            link.textContent = `${source.title} (${source.source_name})`;
+            link.target = "_blank";
+            item.appendChild(link);
+            list.appendChild(item);
+          });
+          wrapper.appendChild(list);
+        }
+
+        conversation.appendChild(wrapper);
+        conversation.scrollTop = conversation.scrollHeight;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const input = form.question;
+        const question = input.value.trim();
+        if (!question) {
+          return;
+        }
+
+        appendMessage("user", question);
+        input.value = "";
+
+        appendMessage("assistant", "Thinking...\u2026");
+
+        try {
+          const response = await fetch("/ask", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ question }),
+          });
+
+          const data = await response.json();
+          conversation.removeChild(conversation.lastChild);
+
+          if (!response.ok) {
+            appendMessage("assistant", data.answer || "Something went wrong.");
+            return;
+          }
+
+          appendMessage("assistant", data.answer, data.sources || []);
+        } catch (error) {
+          conversation.removeChild(conversation.lastChild);
+          appendMessage(
+            "assistant",
+            "I ran into a network issue while sending your question. Please try again."
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

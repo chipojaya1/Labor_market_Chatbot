@@ -1,0 +1,47 @@
+[
+  {
+    "id": "bls_national_salary",
+    "title": "U.S. National Data Scientist Salary Snapshot (May 2023)",
+    "content": "According to the Bureau of Labor Statistics Occupational Employment and Wage Statistics for May 2023, the median annual wage for data scientists across the United States was $108,660. The 25th percentile earned $81,410 while the 75th percentile reached $136,920. The highest-paying industries included computer systems design and management of companies, both exceeding $120,000 median pay. The District of Columbia, Washington, and California were among the highest paying jurisdictions, each reporting mean wages above $140,000.",
+    "summary": "BLS OEWS (May 2023): national median $108.6K, middle 50% ranges from $81.4K-$136.9K, with top markets DC/WA/CA.",
+    "source_name": "BLS OEWS",
+    "source_url": "https://www.bls.gov/oes/current/oes151244.htm",
+    "last_updated": "2023-05-01"
+  },
+  {
+    "id": "bls_state_salary",
+    "title": "State-Level Salary Bands for Entry-Level Data Scientists",
+    "content": "State employment data from BLS shows strong regional variation. Emerging entry-level markets such as Texas and North Carolina report mean wages near $110,000 with cost-of-living advantages. California and New York continue to lead in absolute pay with entry-level offers clustering between $115,000-$125,000. States with rapid tech growth (Colorado, Massachusetts) show 5% year-over-year wage increases.",
+    "summary": "State snapshots: CA/NY entry roles $115K-$125K; TX/NC ~$110K with lower cost of living; CO/MA seeing ~5% YoY wage growth.",
+    "source_name": "BLS OEWS State Files",
+    "source_url": "https://download.bls.gov/pub/time.series/oe/",
+    "last_updated": "2023-05-01"
+  },
+  {
+    "id": "glassdoor_skills",
+    "title": "Top Skills in 2024 Glassdoor Listings",
+    "content": "Glassdoor job listings compiled for 2024 entry-level data science roles show Python (92% of postings), SQL (88%), and cloud platforms such as AWS or Azure (55%) as baseline requirements. Machine learning fundamentals (regression, classification) appear in 73% of postings. Communication with stakeholders and data storytelling is explicitly called out in 41% of ads, highlighting the need for soft skills.",
+    "summary": "Glassdoor 2024: Python 92%, SQL 88%, ML fundamentals 73%, cloud 55%, storytelling/communication 41%.",
+    "source_name": "Glassdoor Data Science Jobs & Salaries 2024",
+    "source_url": "https://www.kaggle.com/datasets/fahadrehman07/data-science-jobs-and-salary-glassdoor",
+    "last_updated": "2024-02-15"
+  },
+  {
+    "id": "glassdoor_hiring_trends",
+    "title": "Hiring Momentum Across Industries",
+    "content": "Comparing Glassdoor postings between Q1 2023 and Q1 2024 indicates that healthcare analytics roles grew 18% year-over-year, fintech roles 12%, while big tech postings remained flat but highly competitive. Internship datasets show paid internship stipends averaging $32/hour in metropolitan hubs and $24/hour in mid-sized cities.",
+    "summary": "Hiring trends: healthcare analytics +18% YoY, fintech +12%, big tech flat; internships ~$32/hr in major cities, $24/hr elsewhere.",
+    "source_name": "Glassdoor + Internship Salary Aggregates",
+    "source_url": "https://www.kaggle.com/datasets/emreksz/data-science-and-analytics-internships-and-salaries",
+    "last_updated": "2024-03-01"
+  },
+  {
+    "id": "interview_questions",
+    "title": "Interview Preparation Priorities",
+    "content": "Frequently asked interview questions emphasize probability (Bayes theorem, distributions), experimentation design, and SQL window functions. Behavioral prompts focus on project storytelling and stakeholder alignment. Practicing case studies that walk through data cleaning, model selection, and communicating trade-offs is recommended.",
+    "summary": "Interviews: probability & experiment design, SQL windows, storytelling your project decisions.",
+    "source_name": "Data Science Interview Questions (Kaggle)",
+    "source_url": "https://www.kaggle.com/datasets/sandy1811/data-science-interview-questions",
+    "last_updated": "2024-01-10"
+  }
+]
