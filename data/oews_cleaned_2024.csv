@@ -1,52 +1,217 @@
-Occupation,Location,Average_Salary,Total_Jobs,Year,Data_Source
-Data Scientists,United States,124590.0,233440.0,2024,BLS OEWS
-Data Scientists,Alabama,102970.0,1620.0,2024,BLS OEWS
-Data Scientists,Alaska,88690.0,210.0,2024,BLS OEWS
-Data Scientists,Arizona,112460.0,4080.0,2024,BLS OEWS
-Data Scientists,Arkansas,104560.0,470.0,2024,BLS OEWS
-Data Scientists,California,155450.0,36850.0,2024,BLS OEWS
-Data Scientists,Colorado,118250.0,6750.0,2024,BLS OEWS
-Data Scientists,Connecticut,120270.0,1630.0,2024,BLS OEWS
-Data Scientists,District of Columbia,148170.0,3580.0,2024,BLS OEWS
-Data Scientists,Florida,117670.0,9480.0,2024,BLS OEWS
-Data Scientists,Georgia,111020.0,7730.0,2024,BLS OEWS
-Data Scientists,Hawaii,124530.0,240.0,2024,BLS OEWS
-Data Scientists,Idaho,120410.0,980.0,2024,BLS OEWS
-Data Scientists,Illinois,119010.0,7390.0,2024,BLS OEWS
-Data Scientists,Indiana,92620.0,3120.0,2024,BLS OEWS
-Data Scientists,Iowa,97300.0,2330.0,2024,BLS OEWS
-Data Scientists,Kansas,107300.0,340.0,2024,BLS OEWS
-Data Scientists,Kentucky,100410.0,1700.0,2024,BLS OEWS
-Data Scientists,Louisiana,71740.0,1120.0,2024,BLS OEWS
-Data Scientists,Maine,101890.0,1040.0,2024,BLS OEWS
-Data Scientists,Maryland,135370.0,3400.0,2024,BLS OEWS
-Data Scientists,Massachusetts,139670.0,9990.0,2024,BLS OEWS
-Data Scientists,Michigan,102030.0,6450.0,2024,BLS OEWS
-Data Scientists,Minnesota,118110.0,3500.0,2024,BLS OEWS
-Data Scientists,Mississippi,77830.0,270.0,2024,BLS OEWS
-Data Scientists,Missouri,95310.0,4350.0,2024,BLS OEWS
-Data Scientists,Montana,111490.0,200.0,2024,BLS OEWS
-Data Scientists,Nebraska,97720.0,1850.0,2024,BLS OEWS
-Data Scientists,Nevada,98820.0,1230.0,2024,BLS OEWS
-Data Scientists,New Hampshire,102230.0,870.0,2024,BLS OEWS
-Data Scientists,New Jersey,131800.0,5860.0,2024,BLS OEWS
-Data Scientists,New Mexico,86520.0,510.0,2024,BLS OEWS
-Data Scientists,New York,133450.0,20070.0,2024,BLS OEWS
-Data Scientists,North Carolina,118020.0,10140.0,2024,BLS OEWS
-Data Scientists,North Dakota,94130.0,320.0,2024,BLS OEWS
-Data Scientists,Ohio,100260.0,5510.0,2024,BLS OEWS
-Data Scientists,Oklahoma,89940.0,2160.0,2024,BLS OEWS
-Data Scientists,Oregon,124060.0,2650.0,2024,BLS OEWS
-Data Scientists,Pennsylvania,107450.0,10430.0,2024,BLS OEWS
-Data Scientists,Rhode Island,119400.0,1190.0,2024,BLS OEWS
-Data Scientists,South Carolina,96970.0,2810.0,2024,BLS OEWS
-Data Scientists,South Dakota,92460.0,270.0,2024,BLS OEWS
-Data Scientists,Tennessee,114830.0,2550.0,2024,BLS OEWS
-Data Scientists,Texas,114800.0,23420.0,2024,BLS OEWS
-Data Scientists,Utah,119640.0,4830.0,2024,BLS OEWS
-Data Scientists,Vermont,119630.0,210.0,2024,BLS OEWS
-Data Scientists,Virginia,132230.0,6200.0,2024,BLS OEWS
-Data Scientists,Washington,162730.0,7930.0,2024,BLS OEWS
-Data Scientists,West Virginia,102770.0,220.0,2024,BLS OEWS
-Data Scientists,Wisconsin,105540.0,3640.0,2024,BLS OEWS
-Data Scientists,Puerto Rico,72370.0,120.0,2024,BLS OEWS
+OCC_CODE,Occupation,Location,Average_Salary,Median_Salary,Total_Jobs,A_MEAN_suppressed,A_MEDIAN_suppressed,TOT_EMP_suppressed,Location_Type,Year,Data_Source
+15-1240,Database and Network Administrators and Architects,United States,115840.0,107480.0,633540.0,False,False,False,National,2024,BLS OEWS
+15-1242,Database Administrators,United States,107440.0,104620.0,73180.0,False,False,False,National,2024,BLS OEWS
+15-1243,Database Architects,United States,142620.0,135980.0,64770.0,False,False,False,National,2024,BLS OEWS
+15-2050,Data Scientists,United States,124590.0,112590.0,233440.0,False,False,False,National,2024,BLS OEWS
+15-2051,Data Scientists,United States,124590.0,112590.0,233440.0,False,False,False,National,2024,BLS OEWS
+43-9020,Data Entry and Information Processing Workers,United States,43680.0,41480.0,171310.0,False,False,False,National,2024,BLS OEWS
+43-9021,Data Entry Keyers,United States,42070.0,39850.0,135280.0,False,False,False,National,2024,BLS OEWS
+15-1242,Database Administrators,Alabama,92930.0,88560.0,1990.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Alabama,117510.0,111330.0,310.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Alabama,102970.0,105410.0,1620.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Alabama,35050.0,33670.0,1110.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Alaska,96600.0,93180.0,90.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Alaska,111570.0,113800.0,40.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Alaska,88690.0,77400.0,210.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Alaska,45230.0,42050.0,210.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Arizona,97340.0,96320.0,1330.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Arizona,135080.0,130620.0,850.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Arizona,112460.0,106080.0,4080.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Arizona,44070.0,42800.0,3750.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Arkansas,82780.0,79710.0,600.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Arkansas,109380.0,101000.0,330.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Arkansas,104560.0,104320.0,470.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Arkansas,36760.0,34840.0,880.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,California,119060.0,111090.0,8360.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,California,162820.0,159130.0,5850.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,California,155450.0,136800.0,36850.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,California,47210.0,45680.0,14040.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Colorado,115970.0,119940.0,1400.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Colorado,152940.0,151460.0,2140.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Colorado,118250.0,106500.0,6750.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Colorado,48040.0,45560.0,2040.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Connecticut,103400.0,101990.0,770.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Connecticut,147910.0,147400.0,700.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Connecticut,120270.0,109960.0,1630.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Connecticut,47480.0,46020.0,890.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Delaware,105850.0,100240.0,730.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Delaware,150060.0,146430.0,2476.1650485436894,False,False,True,State,2024,BLS OEWS
+15-2051,Data Scientists,Delaware,94470.88669950739,97980.0,540.0,True,True,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Delaware,39050.0,37190.0,530.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,District of Columbia,120470.0,128440.0,550.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,District of Columbia,158550.0,157080.0,800.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,District of Columbia,148170.0,137120.0,3580.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,District of Columbia,57560.0,51860.0,320.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Florida,102900.0,97900.0,4080.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Florida,138280.0,133040.0,2040.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Florida,117670.0,105820.0,9480.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Florida,39620.0,38100.0,9280.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Georgia,105590.0,106100.0,3020.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Georgia,141590.0,135280.0,2930.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Georgia,111020.0,102630.0,7730.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Georgia,40840.0,39800.0,3100.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Hawaii,97380.0,93400.0,110.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Hawaii,150190.0,149500.0,70.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Hawaii,124530.0,123880.0,240.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Hawaii,94470.88669950739,97980.0,260.0,True,True,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Idaho,88440.0,78780.0,160.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Idaho,130240.0,126030.0,350.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Idaho,120410.0,109340.0,980.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Idaho,39530.0,36400.0,560.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Illinois,107750.0,101070.0,2290.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Illinois,136370.0,134490.0,1460.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Illinois,119010.0,113490.0,7390.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Illinois,42050.0,39450.0,6680.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Indiana,85480.0,83600.0,1180.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Indiana,132150.0,133150.0,670.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Indiana,92620.0,84050.0,3120.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Indiana,40770.0,39800.0,2690.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Iowa,101500.0,97690.0,380.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Iowa,124910.0,131370.0,280.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Iowa,97300.0,97980.0,2330.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Iowa,41770.0,41090.0,910.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Kansas,118250.0,112740.0,560.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Kansas,124980.0,129060.0,390.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Kansas,107300.0,110320.0,340.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Kansas,37720.0,37710.0,850.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Kentucky,86490.0,83980.0,770.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Kentucky,110400.0,102560.0,510.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Kentucky,100410.0,93490.0,1700.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Kentucky,36430.0,36400.0,1600.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Louisiana,89230.0,86420.0,240.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Louisiana,94470.88669950739,97980.0,350.0,True,True,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Louisiana,71740.0,70530.0,1120.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Louisiana,38910.0,36630.0,1540.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Maine,82210.0,76980.0,230.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Maine,134200.0,154790.0,250.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Maine,101890.0,94350.0,1040.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Maine,45290.0,43720.0,200.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Maryland,124430.0,122110.0,2640.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Maryland,143020.0,140710.0,1420.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Maryland,135370.0,124340.0,3400.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Maryland,39970.0,36940.0,2520.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Massachusetts,112090.0,117420.0,1940.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Massachusetts,161000.0,161160.0,1720.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Massachusetts,139670.0,132250.0,9990.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Massachusetts,47200.0,46930.0,1840.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Michigan,97660.0,97880.0,1190.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Michigan,117600.0,120810.0,1150.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Michigan,102030.0,99470.0,6450.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Michigan,39750.0,38570.0,2980.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Minnesota,101010.0,97230.0,970.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Minnesota,127730.0,130420.0,910.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Minnesota,118110.0,117840.0,3500.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Minnesota,43400.0,41640.0,1320.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Mississippi,84830.0,86420.0,230.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Mississippi,92400.0,90980.0,110.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Mississippi,77830.0,69430.0,270.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Mississippi,36090.0,33530.0,660.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Missouri,94990.0,87600.0,1400.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Missouri,112730.0,108820.0,1840.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Missouri,95310.0,85570.0,4350.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Missouri,43380.0,36620.0,2220.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Montana,83070.0,80960.0,240.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Montana,124500.0,116250.0,50.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Montana,111490.0,106860.0,200.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Montana,41310.0,39750.0,380.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Nebraska,96080.0,92470.0,540.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Nebraska,129750.0,132320.0,590.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Nebraska,97720.0,96470.0,1850.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Nebraska,36390.0,36330.0,1110.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Nevada,87960.0,86980.0,470.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Nevada,124010.0,130360.0,320.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Nevada,98820.0,93310.0,1230.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Nevada,40760.0,37980.0,480.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,New Hampshire,109190.0,121820.0,230.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,New Hampshire,102230.0,98970.0,870.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,New Hampshire,42380.0,41940.0,780.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,New Jersey,126670.0,128970.0,2060.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,New Jersey,144260.0,143900.0,2530.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,New Jersey,131800.0,130370.0,5860.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,New Jersey,44850.0,43480.0,5240.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,New Mexico,94480.0,94850.0,520.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,New Mexico,117620.0,120120.0,130.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,New Mexico,86520.0,85040.0,510.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,New Mexico,43440.0,44960.0,410.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,New York,113070.0,106940.0,3680.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,New York,137840.0,128270.0,4180.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,New York,133450.0,125400.0,20070.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,New York,45770.0,42990.0,9890.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,North Carolina,106140.0,108430.0,1990.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,North Carolina,129750.0,130560.0,4060.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,North Carolina,118020.0,115380.0,10140.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,North Carolina,39720.0,38580.0,4110.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,North Dakota,85950.0,76400.0,90.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,North Dakota,112830.0,116120.0,50.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,North Dakota,94130.0,96230.0,320.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,North Dakota,94470.88669950739,97980.0,60.0,True,True,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Ohio,96400.0,94020.0,1770.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Ohio,133170.0,129840.0,2230.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Ohio,100260.0,98620.0,5510.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Ohio,41120.0,39810.0,5450.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Oklahoma,87430.0,76980.0,660.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Oklahoma,133880.0,132360.0,730.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Oklahoma,89940.0,80380.0,2160.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Oklahoma,36520.0,35510.0,1760.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Oregon,105050.0,102650.0,930.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Oregon,147530.0,139660.0,710.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Oregon,124060.0,106100.0,2650.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Oregon,47230.0,45650.0,1180.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Pennsylvania,105100.0,107800.0,5000.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Pennsylvania,130130.0,129040.0,2240.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Pennsylvania,107450.0,100320.0,10430.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Pennsylvania,41760.0,42400.0,7350.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Rhode Island,104100.0,103810.0,320.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Rhode Island,149350.0,136510.0,190.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Rhode Island,119400.0,114390.0,1190.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Rhode Island,46990.0,46290.0,290.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,South Carolina,99890.0,92670.0,660.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,South Carolina,128340.0,128440.0,730.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,South Carolina,96970.0,90660.0,2810.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,South Carolina,38170.0,36590.0,1520.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,South Dakota,87610.0,85890.0,150.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,South Dakota,121220.0,127460.0,60.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,South Dakota,92460.0,92000.0,270.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,South Dakota,37390.0,38140.0,2476.1650485436894,False,False,True,State,2024,BLS OEWS
+15-1242,Database Administrators,Tennessee,100650.0,101640.0,1440.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Tennessee,125840.0,128440.0,680.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Tennessee,114830.0,104700.0,2550.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Tennessee,40780.0,39670.0,1860.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Texas,109330.0,109990.0,6110.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Texas,136930.0,133800.0,6330.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Texas,114800.0,106540.0,23420.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Texas,38980.0,37180.0,19950.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Utah,105050.0,97890.0,800.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Utah,134470.0,127770.0,630.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Utah,119640.0,116420.0,4830.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Utah,45060.0,41600.0,2430.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Vermont,99980.0,102170.0,120.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Vermont,94470.88669950739,97980.0,50.0,True,True,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Vermont,119630.0,120670.0,210.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Vermont,43580.0,42590.0,260.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Virginia,113810.0,105000.0,4210.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Virginia,94470.88669950739,97980.0,7140.0,True,True,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Virginia,132230.0,126070.0,6200.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Virginia,41430.0,38130.0,3000.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Washington,118000.0,114700.0,2190.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Washington,147540.0,144050.0,2490.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Washington,162730.0,158760.0,7930.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Washington,47350.0,44710.0,1640.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,West Virginia,73530.0,65380.0,230.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,West Virginia,132690.0,157590.0,270.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,West Virginia,102770.0,95760.0,220.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,West Virginia,36830.0,35700.0,660.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Wisconsin,104550.0,98920.0,1380.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Wisconsin,140770.0,138930.0,360.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Wisconsin,105540.0,100020.0,3640.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Wisconsin,41620.0,38740.0,2610.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Wyoming,73300.0,69980.0,100.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Wyoming,68880.0,62760.0,130.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Wyoming,85480.0,95840.0,2476.1650485436894,False,False,True,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Wyoming,45030.0,41020.0,130.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Guam,27770.0,27620.0,110.0,False,False,False,State,2024,BLS OEWS
+15-1242,Database Administrators,Puerto Rico,57950.0,49210.0,230.0,False,False,False,State,2024,BLS OEWS
+15-1243,Database Architects,Puerto Rico,78160.0,77300.0,80.0,False,False,False,State,2024,BLS OEWS
+15-2051,Data Scientists,Puerto Rico,72370.0,70690.0,120.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Puerto Rico,27620.0,23270.0,2280.0,False,False,False,State,2024,BLS OEWS
+43-9021,Data Entry Keyers,Virgin Islands,34750.0,35060.0,60.0,False,False,False,State,2024,BLS OEWS

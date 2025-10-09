@@ -12,6 +12,7 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 REQUIREMENTS="$PROJECT_ROOT/requirements.txt"
 ENV_NAME="chat-env"
 PYTHON_VERSION="3.11"
+YES_FLAG=0
 
 print_help() {
   sed -n '1,120p' "$0" | sed -n '1,12p'
@@ -43,6 +44,13 @@ if [[ ${#@} -eq 0 ]]; then
   exit 1
 fi
 
+# parse optional --yes to skip prompts
+for arg in "$@"; do
+  if [[ "$arg" == "--yes" || "$arg" == "-y" ]]; then
+    YES_FLAG=1
+  fi
+done
+
 case "$1" in
   --conda)
     if ! command -v conda >/dev/null 2>&1; then
@@ -62,33 +70,70 @@ case "$1" in
 
     echo "Installing remaining requirements via pip (no-deps)..."
     if [[ -f "$REQUIREMENTS" ]]; then
-      pip install -r "$REQUIREMENTS" --no-deps
+      # use pip from the conda env
+      python -m pip install -r "$REQUIREMENTS" --no-deps --prefer-binary
     fi
 
-    echo "Environment created. Run: conda activate $ENV_NAME && flask --app app.app run"
+    echo "Environment created. Run: conda activate $ENV_NAME && FLASK_APP=app.app flask run"
     ;;
 
   --venv)
-    if ! command -v python3.11 >/dev/null 2>&1; then
-      echo "python3.11 not found on PATH. Install Python 3.11 or use --conda." >&2
+    # Find python3 or fallback to python/py
+    PY_CMD=""
+    if command -v python3 >/dev/null 2>&1; then
+      PY_CMD=python3
+    elif command -v python >/dev/null 2>&1; then
+      PY_CMD=python
+    elif command -v py >/dev/null 2>&1; then
+      # Use py launcher on Windows
+      PY_CMD="py -3"
+    fi
+
+    if [[ -z "$PY_CMD" ]]; then
+      echo "No Python interpreter found. Install Python 3.11 (recommended) or use --conda." >&2
       exit 2
     fi
 
-    echo "Creating venv .venv with python3.11..."
-    python3.11 -m venv .venv
-    echo "Activating venv..."
-    # shellcheck disable=SC1091
-    source .venv/bin/activate
+    echo "Creating venv .venv with: $PY_CMD"
+    # create venv using chosen python
+    $PY_CMD -m venv .venv
 
-    echo "Upgrading pip, setuptools, wheel..."
-    pip install --upgrade pip setuptools wheel
-
-    echo "Installing requirements..."
-    if [[ -f "$REQUIREMENTS" ]]; then
-      pip install -r "$REQUIREMENTS"
+    # define venv-local pip/python paths
+    if [[ -x ".venv/bin/pip" ]]; then
+      VENV_PIP=.venv/bin/pip
+      VENV_PY=.venv/bin/python
+    else
+      VENV_PIP=.venv/Scripts/pip.exe
+      VENV_PY=.venv/Scripts/python.exe
     fi
 
-    echo "Venv ready. Activate with: source .venv/bin/activate && flask --app app.app run"
+    echo "Upgrading pip, setuptools, wheel inside .venv..."
+    "$VENV_PIP" install --upgrade pip setuptools wheel
+
+    echo "Installing requirements into .venv (preferring binary wheels)..."
+    if [[ -f "$REQUIREMENTS" ]]; then
+      "$VENV_PIP" install --prefer-binary -r "$REQUIREMENTS"
+    fi
+
+    echo "Venv ready. Activation instructions:"
+    echo "  Bash / Git-bash / WSL: source .venv/bin/activate && export FLASK_APP=app.app && flask run"
+  echo '  PowerShell (Windows): .\.venv\Scripts\Activate.ps1; $env:FLASK_APP='\''app.app'\''; flask run'
+    ;;
+
+  --wsl)
+    # Run the venv creation and pip install inside WSL
+    if ! command -v wsl >/dev/null 2>&1; then
+      echo "wsl command not found. Install WSL or run the --venv flow inside WSL manually." >&2
+      exit 2
+    fi
+
+    # Convert current project root (Windows path) to WSL absolute path
+    WSL_PATH=$(wsl wslpath -a "${PROJECT_ROOT//\\/\\\\}")
+    echo "Running WSL install in: $WSL_PATH"
+
+    wsl bash -lc "set -e; cd '$WSL_PATH'; python3 -m venv .venv || python -m venv .venv; source .venv/bin/activate; pip install --upgrade pip setuptools wheel; pip install --prefer-binary -r requirements.txt"
+
+    echo "WSL venv created. In WSL: cd '$WSL_PATH' && source .venv/bin/activate && export FLASK_APP=app.app && flask run"
     ;;
 
   --verify)

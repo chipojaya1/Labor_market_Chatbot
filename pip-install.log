@@ -1,0 +1,619 @@
+Using pip 25.2 from /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/lib/python3.10/site-packages/pip (python 3.10)
+Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+  Obtaining dependency information for flask==3.0.0 from https://files.pythonhosted.org/packages/36/42/015c23096649b908c809c69388a805a571a3bea44362fe87e33fc3afa01f/flask-3.0.0-py3-none-any.whl.metadata
+  Using cached flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/f3/db/8e12381333aea300890829a0a36bfa738cac95475d88982d538725143fd9/numpy-2.3.0.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/2e/19/d7c972dfe90a353dbd3efbbe1d14a5951de80c99c9dc1b93cd998d51dc0f/numpy-2.3.1.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/37/7d/3fec4199c5ffb892bed55cff901e4f39a58c81df9c44c280499e92cad264/numpy-2.3.2.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/d0/19/95b3d357407220ed24c139018d2518fab0a61a948e68286a25f1a4d049ff/numpy-2.3.3.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.11)
+Collecting numpy==1.26.4 (from -r requirements.txt (line 2))
+  Obtaining dependency information for numpy==1.26.4 from https://files.pythonhosted.org/packages/4b/d7/ecf66c1cd12dc28b4040b15ab4d17b773b87fa9d29ca16125de01adb36cd/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting scikit-learn==1.3.2 (from -r requirements.txt (line 3))
+  Obtaining dependency information for scikit-learn==1.3.2 from https://files.pythonhosted.org/packages/d0/0b/26ad95cf0b747be967b15fb71a06f5ac67aba0fd2f9cd174de6edefc4674/scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting laiser>=0.3.0 (from -r requirements.txt (line 4))
+  Obtaining dependency information for laiser>=0.3.0 from https://files.pythonhosted.org/packages/b8/c8/d1fa3f9ff03a7110b2d66c5407145547c2904a8285ce76c428291236b73a/laiser-0.3.0-py3-none-any.whl.metadata
+  Using cached laiser-0.3.0-py3-none-any.whl.metadata (7.1 kB)
+Collecting pandas>=2.1.0 (from -r requirements.txt (line 5))
+  Obtaining dependency information for pandas>=2.1.0 from https://files.pythonhosted.org/packages/40/a8/4dac1f8f8235e5d25b9955d02ff6f29396191d4e665d71122c3722ca83c5/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting matplotlib>=3.8.0 (from -r requirements.txt (line 6))
+  Obtaining dependency information for matplotlib>=3.8.0 from https://files.pythonhosted.org/packages/e2/3c/5692a2d9a5ba848fda3f48d2b607037df96460b941a59ef236404b39776b/matplotlib-3.10.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached matplotlib-3.10.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting wordcloud>=1.9.3 (from -r requirements.txt (line 7))
+  Obtaining dependency information for wordcloud>=1.9.3 from https://files.pythonhosted.org/packages/dc/2a/a6d5c03decbe145858e777e80dbbf92697da9728c9d0c71c1c81a2d68e35/wordcloud-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached wordcloud-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Collecting Werkzeug>=3.0.0 (from flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for Werkzeug>=3.0.0 from https://files.pythonhosted.org/packages/52/24/ab44c871b0f07f491e5d2ad12c9bd7358e527510618cb1b803a88e986db1/werkzeug-3.1.3-py3-none-any.whl.metadata
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for Jinja2>=3.1.2 from https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl.metadata
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting itsdangerous>=2.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for itsdangerous>=2.1.2 from https://files.pythonhosted.org/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e408583fc4/itsdangerous-2.2.0-py3-none-any.whl.metadata
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for click>=8.1.3 from https://files.pythonhosted.org/packages/db/d3/9dcc0f5797f070ec8edf30fbadfb200e71d9db6b84d211e3b2085a7589a0/click-8.3.0-py3-none-any.whl.metadata
+  Using cached click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting blinker>=1.6.2 (from flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for blinker>=1.6.2 from https://files.pythonhosted.org/packages/10/cb/f2ad4230dc2eb1a74edf38f1a38b9b52277f75bef262d8908e60d957e13c/blinker-1.9.0-py3-none-any.whl.metadata
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+  Link requires a different Python (3.10.12 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/99/f1/c00d6be56e1a718a3068079e3ec8ce044d7179345280f6a3f5066068af0d/scipy-1.6.2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.10.12 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/fe/fd/8704c7b7b34cdac850485e638346025ca57c5a859934b9aa1be5399b33b7/scipy-1.6.3.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.10.12 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/bb/bb/944f559d554df6c9adf037aa9fc982a9706ee0e96c0d5beac701cb158900/scipy-1.7.0.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.10.12 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/47/33/a24aec22b7be7fdb10ec117a95e1e4099890d8bbc6646902f443fc7719d1/scipy-1.7.1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/7a/9e/2c8b1e1052151067e73b4192c0c04f355b3d31b485bd74f48bd4e9e87916/scipy-1.16.0rc1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/9c/ff/c01073c71d82baeacf71b2ae7fc6d47bb4ff898b3f98ce7897098ca36c26/scipy-1.16.0rc2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/81/18/b06a83f0c5ee8cddbde5e3f3d0bb9b702abfa5136ef6d4620ff67df7eee5/scipy-1.16.0.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/f5/4a/b927028464795439faec8eaf0b03b011005c487bb2d07409f28bf30879c4/scipy-1.16.1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/4c/3b/546a6f0bfe791bbb7f8d591613454d15097e53f906308ec6f7c1ce588e8e/scipy-1.16.2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.11)
+Collecting scipy>=1.5.0 (from scikit-learn==1.3.2->-r requirements.txt (line 3))
+  Obtaining dependency information for scipy>=1.5.0 from https://files.pythonhosted.org/packages/8e/6d/41991e503e51fc1134502694c5fa7a1671501a17ffa12716a4a9151af3df/scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting joblib>=1.1.1 (from scikit-learn==1.3.2->-r requirements.txt (line 3))
+  Obtaining dependency information for joblib>=1.1.1 from https://files.pythonhosted.org/packages/1e/e8/685f47e0d754320684db4425a0967f7d3fa70126bffd76110b7009a0090f/joblib-1.5.2-py3-none-any.whl.metadata
+  Using cached joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.2->-r requirements.txt (line 3))
+  Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl.metadata
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting torch>=1.9.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for torch>=1.9.0 from https://files.pythonhosted.org/packages/70/1c/58da560016f81c339ae14ab16c98153d51c941544ae568da3cb5b1ceb572/torch-2.8.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata
+  Using cached torch-2.8.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting transformers>=4.20.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for transformers>=4.20.0 from https://files.pythonhosted.org/packages/e5/2b/4d2708ac1ff5cd708b6548f4c5812d0ae40d1c28591c4c1c762b6dbdef2d/transformers-4.57.0-py3-none-any.whl.metadata
+  Using cached transformers-4.57.0-py3-none-any.whl.metadata (41 kB)
+Collecting sentence-transformers>=2.2.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for sentence-transformers>=2.2.0 from https://files.pythonhosted.org/packages/48/21/4670d03ab8587b0ab6f7d5fa02a95c3dd6b1f39d0e40e508870201f3d76c/sentence_transformers-5.1.1-py3-none-any.whl.metadata
+  Using cached sentence_transformers-5.1.1-py3-none-any.whl.metadata (16 kB)
+Collecting faiss-cpu>=1.7.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for faiss-cpu>=1.7.0 from https://files.pythonhosted.org/packages/f4/0f/02d5d2ae8b53e5629cb03fbd871bbbfbbd647ffc3d09393b34f6347072d7/faiss_cpu-1.12.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached faiss_cpu-1.12.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Collecting spacy>=3.4.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for spacy>=3.4.0 from https://files.pythonhosted.org/packages/bb/e7/bd1df17add98a5ec3e0d2dd73d4e5884683ffd2e34d3c0e5828f48933787/spacy-3.8.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached spacy-3.8.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (27 kB)
+Collecting requests>=2.25.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for requests>=2.25.0 from https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl.metadata
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tqdm>=4.62.0 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for tqdm>=4.62.0 from https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl.metadata
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting skillNer==1.0.3 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Using cached skillner-1.0.3-py3-none-any.whl
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/f2/49/97644f3d8a87d23b60ae79374d57b9d9634df8e7191bdcbad272bfe9eed0/ipython-9.0.0b1-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/34/0e/e46f202350429943f8c74c9249a6ad5c3c588785e933be7d9782a5bfe210/ipython-9.0.0b1.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/cd/95/7c4f040b0fc141cdc602abdcd7391d8da061120042e85d72bd2564abcc3c/ipython-9.0.0b2-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/6f/8a/f7eebe204948090bfca52a7e5b555fba8b10bcbf508f170d6ec93a694fa9/ipython-9.0.0b2.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/85/a1/894e4c0b6ac994045c6edeb2b6fdf69c59f20fcd2e348a42f4e40889181c/ipython-9.0.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/de/39/264894738a202ddaf6abae39b3f84671ddee23fd292dbb3e10039e70300c/ipython-9.0.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/28/39/fda74f8215ef94a812dd780073c61a826a88a01e51f627a3454f7ae6951d/ipython-9.0.1-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/9d/33/1901c9a842b301d8674f367dee597e654e402548a903faf7280aae8fc2d4/ipython-9.0.1.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/20/3a/917cb9e72f4e1a4ea13c862533205ae1319bd664119189ee5cc9e4e95ebf/ipython-9.0.2-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/7d/ce/012a0f40ca58a966f87a6e894d6828e2817657cbdf522b02a5d3a87d92ce/ipython-9.0.2.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/b2/9d/4ff2adf55d1b6e3777b0303fdbe5b723f76e46cba4a53a32fe82260d2077/ipython-9.1.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/70/9a/6b8984bedc990f3a4aa40ba8436dea27e23d26a64527de7c2e5e12e76841/ipython-9.1.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/78/ce/5e897ee51b7d26ab4e47e5105e7368d40ce6cfae2367acdf3165396d50be/ipython-9.2.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/9d/02/63a84444a7409b3c0acd1de9ffe524660e0e5d82ee473e78b45e5bfb64a4/ipython-9.2.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/3c/99/9ed3d52d00f1846679e3aa12e2326ac7044b5e7f90dc822b60115fa533ca/ipython-9.3.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/dc/09/4c7e06b96fbd203e06567b60fb41b06db606b6a82db6db7b2c85bb72a15c/ipython-9.3.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/63/f8/0031ee2b906a15a33d6bfc12dd09c3dfa966b3cb5b284ecfb7549e6ac3c4/ipython-9.4.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/54/80/406f9e3bde1c1fd9bf5a0be9d090f8ae623e401b7670d8f6fdf2ab679891/ipython-9.4.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/08/2a/5628a99d04acb2d2f2e749cdf4ea571d2575e898df0528a090948018b726/ipython-9.5.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/6e/71/a86262bf5a68bf211bcc71fe302af7e05f18a2852fdc610a854d20d085e6/ipython-9.5.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/48/c5/d5e07995077e48220269c28a221e168c91123ad5ceee44d548f54a057fc0/ipython-9.6.0-py3-none-any.whl (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/2a/34/29b18c62e39ee2f7a6a3bba7efd952729d8aadd45ca17efc34453b717665/ipython-9.6.0.tar.gz (from https://pypi.org/simple/ipython/) (requires-python:>=3.11)
+Collecting ipython (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for ipython from https://files.pythonhosted.org/packages/91/d0/274fbf7b0b12643cbbc001ce13e6a5b1607ac4929d1b11c72460152c9fc3/ipython-8.37.0-py3-none-any.whl.metadata
+  Using cached ipython-8.37.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting psutil (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for psutil from https://files.pythonhosted.org/packages/9d/de/04c8c61232f7244aa0a4b9a9fbd63a89d5aeaf94b2fc9d1d16e2faa5cbb0/psutil-7.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached psutil-7.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (23 kB)
+Collecting google-generativeai==0.8.5 (from laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-generativeai==0.8.5 from https://files.pythonhosted.org/packages/6e/40/c42ff9ded9f09ec9392879a8e6538a00b2dc185e834a3392917626255419/google_generativeai-0.8.5-py3-none-any.whl.metadata
+  Using cached google_generativeai-0.8.5-py3-none-any.whl.metadata (3.9 kB)
+Collecting google-ai-generativelanguage==0.6.15 (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-ai-generativelanguage==0.6.15 from https://files.pythonhosted.org/packages/7c/a3/67b8a6ff5001a1d8864922f2d6488dc2a14367ceb651bc3f09a947f2f306/google_ai_generativelanguage-0.6.15-py3-none-any.whl.metadata
+  Using cached google_ai_generativelanguage-0.6.15-py3-none-any.whl.metadata (5.7 kB)
+Collecting google-api-core (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-api-core from https://files.pythonhosted.org/packages/77/ad/f73cf9fe9bd95918502b270e3ddb8764e4c900b3bbd7782b90c56fac14bb/google_api_core-2.26.0-py3-none-any.whl.metadata
+  Using cached google_api_core-2.26.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting google-api-python-client (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-api-python-client from https://files.pythonhosted.org/packages/f4/38/d25ae1565103a545cf18207a5dec09a6d39ad88e5b0399a2430e9edb0550/google_api_python_client-2.184.0-py3-none-any.whl.metadata
+  Using cached google_api_python_client-2.184.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting google-auth>=2.15.0 (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-auth>=2.15.0 from https://files.pythonhosted.org/packages/be/a4/7319a2a8add4cc352be9e3efeff5e2aacee917c85ca2fa1647e29089983c/google_auth-2.41.1-py2.py3-none-any.whl.metadata
+  Using cached google_auth-2.41.1-py2.py3-none-any.whl.metadata (6.6 kB)
+Collecting protobuf (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for protobuf from https://files.pythonhosted.org/packages/5c/f6/88d77011b605ef979aace37b7703e4eefad066f7e84d935e5a696515c2dd/protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata
+  Using cached protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting pydantic (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pydantic from https://files.pythonhosted.org/packages/f4/9d/d5c855424e2e5b6b626fbc6ec514d8e655a600377ce283008b115abb7445/pydantic-2.12.0-py3-none-any.whl.metadata
+  Using cached pydantic-2.12.0-py3-none-any.whl.metadata (83 kB)
+Collecting typing-extensions (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for typing-extensions from https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting proto-plus<2.0.0dev,>=1.22.3 (from google-ai-generativelanguage==0.6.15->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for proto-plus<2.0.0dev,>=1.22.3 from https://files.pythonhosted.org/packages/4e/6d/280c4c2ce28b1593a19ad5239c8b826871fc6ec275c21afc8e1820108039/proto_plus-1.26.1-py3-none-any.whl.metadata
+  Using cached proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+Collecting protobuf (from google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for protobuf from https://files.pythonhosted.org/packages/85/e4/07c80521879c2d15f321465ac24c70efe2381378c00bf5e56a0f4fbac8cd/protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl.metadata
+  Using cached protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+Collecting nltk (from skillNer==1.0.3->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nltk from https://files.pythonhosted.org/packages/60/90/81ac364ef94209c100e12579629dc92bf7a709a84af32f8c551b02c07e94/nltk-3.9.2-py3-none-any.whl.metadata
+  Using cached nltk-3.9.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting jellyfish (from skillNer==1.0.3->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for jellyfish from https://files.pythonhosted.org/packages/48/08/fc3fd641dc09754a6986f3f00e625fd1aac89b1f012a1d4087c53391de64/jellyfish-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached jellyfish-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.6 kB)
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for googleapis-common-protos<2.0.0,>=1.56.2 from https://files.pythonhosted.org/packages/86/f1/62a193f0227cf15a920390abe675f386dec35f7ae3ffe6da582d3ade42c7/googleapis_common_protos-1.70.0-py3-none-any.whl.metadata
+  Using cached googleapis_common_protos-1.70.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for grpcio<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/a5/45/b04407e44050781821c84f26df71b3f7bc469923f92f9f8bc27f1406dbcc/grpcio-1.75.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached grpcio-1.75.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/d8/ad/6f414bb0b36eee20d93af6907256f208ffcda992ae6d3d7b6a778afe31e6/grpcio_status-1.75.1-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.75.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting cachetools<7.0,>=2.0.0 (from google-auth>=2.15.0->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for cachetools<7.0,>=2.0.0 from https://files.pythonhosted.org/packages/6c/56/3124f61d37a7a4e7cc96afc5492c78ba0cb551151e530b54669ddd1436ef/cachetools-6.2.0-py3-none-any.whl.metadata
+  Using cached cachetools-6.2.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth>=2.15.0->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pyasn1-modules>=0.2.1 from https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl.metadata
+  Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth>=2.15.0->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for rsa<5,>=3.1.4 from https://files.pythonhosted.org/packages/64/8d/0133e4eb4beed9e425d9a98ed6e081a55d195481b7632472be1af08d2f6b/rsa-4.9.1-py3-none-any.whl.metadata
+  Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+INFO: pip is looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/2b/24/d536f0a0fda3a3eeb334893e5fb9d567c2777de6a5384413f71b35cfd0e5/grpcio_status-1.75.0-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.75.0-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/28/aa/1b1fe7d8ab699e1ec26d3a36b91d3df9f83a30abc07d4c881d0296b17b67/grpcio_status-1.74.0-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.74.0-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/2e/50/ee32e6073e2c3a4457be168e2bbf84d02ad9d2c18c4a578a641480c293d4/grpcio_status-1.73.1-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.73.1-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/e2/95/e4b963a8730e04fae0e98cdd12212a9ffb318daf8687ea3220b78b34f8fa/grpcio_status-1.73.0-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/14/53/473ee4db326aced076c5a7b503692cab10e3d0d963ac8916fc3a1994bc8a/grpcio_status-1.72.2-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.72.2-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/11/62/529a3d6b00792ef464d929ffa8980a300ad3030842880d04213ef9e6e0fd/grpcio_status-1.72.1-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.72.1-py3-none-any.whl.metadata (1.1 kB)
+  Obtaining dependency information for grpcio-status<2.0.0,>=1.33.2 from https://files.pythonhosted.org/packages/67/58/317b0134129b556a93a3b0afe00ee675b5657f0155509e22fcb853bafe2d/grpcio_status-1.71.2-py3-none-any.whl.metadata
+  Using cached grpcio_status-1.71.2-py3-none-any.whl.metadata (1.1 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.25.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for charset_normalizer<4,>=2 from https://files.pythonhosted.org/packages/65/1a/7425c952944a6521a9cfa7e675343f83fd82085b8af2b1373a2409c683dc/charset_normalizer-3.4.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Downloading charset_normalizer-3.4.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+Collecting idna<4,>=2.5 (from requests>=2.25.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for idna<4,>=2.5 from https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl.metadata
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.25.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for urllib3<3,>=1.21.1 from https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl.metadata
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.25.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for certifi>=2017.4.17 from https://files.pythonhosted.org/packages/e4/37/af0d2ef3967ac0d6113837b44a4f0bfe1328c2b9763bd5b1744520e5cfed/certifi-2025.10.5-py3-none-any.whl.metadata
+  Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+Collecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth>=2.15.0->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pyasn1>=0.1.3 from https://files.pythonhosted.org/packages/c8/f1/d6a797abb14f6283c0ddff96bbdd46937f64122b8c925cab503dd37f8214/pyasn1-0.6.1-py3-none-any.whl.metadata
+  Downloading pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting python-dateutil>=2.8.2 (from pandas>=2.1.0->-r requirements.txt (line 5))
+  Obtaining dependency information for python-dateutil>=2.8.2 from https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas>=2.1.0->-r requirements.txt (line 5))
+  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl.metadata
+  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=2.1.0->-r requirements.txt (line 5))
+  Obtaining dependency information for tzdata>=2022.7 from https://files.pythonhosted.org/packages/5c/23/c7abc0ca0a1526a0774eca151daeb8de62ec457e77262b66b359c3c7679e/tzdata-2025.2-py2.py3-none-any.whl.metadata
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/58/01/1253e6698a07380cd31a736d248a3f2a50a7c88779a1813da27503cadc2a/contourpy-1.3.3.tar.gz (from https://pypi.org/simple/contourpy/) (requires-python:>=3.11)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/32/5c/1ee32d1c7956923202f00cf8d2a14a62ed7517bdc0ee1e55301227fc273c/contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for cycler>=0.10 from https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl.metadata
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for fonttools>=4.22.0 from https://files.pythonhosted.org/packages/ce/20/9b2b4051b6ec6689480787d506b5003f72648f50972a92d04527a456192c/fonttools-4.60.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached fonttools-4.60.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (112 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for kiwisolver>=1.3.1 from https://files.pythonhosted.org/packages/d4/42/0f333164e6307a0687d1eb9ad256215aae2f4bd5d28f4653d6cd319a3ba3/kiwisolver-1.4.9-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata
+  Using cached kiwisolver-1.4.9-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (6.3 kB)
+Collecting packaging>=20.0 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for packaging>=20.0 from https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl.metadata
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pillow>=8 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for pillow>=8 from https://files.pythonhosted.org/packages/f0/16/1a6bf01fb622fb9cf5c91683823f073f053005c849b1f52ed613afcf8dae/pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting pyparsing>=3 (from matplotlib>=3.8.0->-r requirements.txt (line 6))
+  Obtaining dependency information for pyparsing>=3 from https://files.pythonhosted.org/packages/10/5e/1aa9a93198c6b64513c9d7752de7422c06402de6600a8767da1524f9570b/pyparsing-3.2.5-py3-none-any.whl.metadata
+  Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==3.0.0->-r requirements.txt (line 1))
+  Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/af/cd/ce6e848bbf2c32314c9b237839119c5a564a59725b53157c856e90937b7a/markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.1.0->-r requirements.txt (line 5))
+  Obtaining dependency information for six>=1.5 from https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl.metadata
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting huggingface-hub>=0.20.0 (from sentence-transformers>=2.2.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for huggingface-hub>=0.20.0 from https://files.pythonhosted.org/packages/31/a0/651f93d154cb72323358bf2bbae3e642bdb5d2f1bfc874d096f7cb159fa0/huggingface_hub-0.35.3-py3-none-any.whl.metadata
+  Using cached huggingface_hub-0.35.3-py3-none-any.whl.metadata (14 kB)
+Collecting filelock (from transformers>=4.20.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/76/91/7216b27286936c16f5b4d0c530087e4a54eead683e6b0b73dd0c64844af6/filelock-3.20.0-py3-none-any.whl.metadata
+  Using cached filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting pyyaml>=5.1 (from transformers>=4.20.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pyyaml>=5.1 from https://files.pythonhosted.org/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting regex!=2019.12.17 (from transformers>=4.20.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for regex!=2019.12.17 from https://files.pythonhosted.org/packages/cc/90/2e5f9da89d260de7d0417ead91a1bc897f19f0af05f4f9323313b76c47f2/regex-2025.9.18-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached regex-2025.9.18-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers>=4.20.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for tokenizers<=0.23.0,>=0.22.0 from https://files.pythonhosted.org/packages/d0/c6/dc3a0db5a6766416c32c034286d7c2d406da1f498e4de04ab1b8959edd00/tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting safetensors>=0.4.3 (from transformers>=4.20.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for safetensors>=0.4.3 from https://files.pythonhosted.org/packages/fe/5d/5a514d7b88e310c8b146e2404e0dc161282e78634d9358975fd56dfd14be/safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.20.0->sentence-transformers>=2.2.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for fsspec>=2023.5.0 from https://files.pythonhosted.org/packages/47/71/70db47e4f6ce3e5c37a607355f80da8860a33226be640226ac52cb05ef2e/fsspec-2025.9.0-py3-none-any.whl.metadata
+  Using cached fsspec-2025.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface-hub>=0.20.0->sentence-transformers>=2.2.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for hf-xet<2.0.0,>=1.1.3 from https://files.pythonhosted.org/packages/15/07/86397573efefff941e100367bbda0b21496ffcdb34db7ab51912994c32a2/hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.7 kB)
+Collecting spacy-legacy<3.1.0,>=3.0.11 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for spacy-legacy<3.1.0,>=3.0.11 from https://files.pythonhosted.org/packages/c3/55/12e842c70ff8828e34e543a2c7176dac4da006ca6901c9e8b43efab8bc6b/spacy_legacy-3.0.12-py2.py3-none-any.whl.metadata
+  Using cached spacy_legacy-3.0.12-py2.py3-none-any.whl.metadata (2.8 kB)
+Collecting spacy-loggers<2.0.0,>=1.0.0 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for spacy-loggers<2.0.0,>=1.0.0 from https://files.pythonhosted.org/packages/33/78/d1a1a026ef3af911159398c939b1509d5c36fe524c7b644f34a5146c4e16/spacy_loggers-1.0.5-py3-none-any.whl.metadata
+  Using cached spacy_loggers-1.0.5-py3-none-any.whl.metadata (23 kB)
+Collecting murmurhash<1.1.0,>=0.28.0 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for murmurhash<1.1.0,>=0.28.0 from https://files.pythonhosted.org/packages/f8/ed/19c48d4c5ad475e144fba5b1adf45d8a189eabde503168660e1ec5d081e8/murmurhash-1.0.13-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached murmurhash-1.0.13-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.2 kB)
+Collecting cymem<2.1.0,>=2.0.2 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for cymem<2.1.0,>=2.0.2 from https://files.pythonhosted.org/packages/52/d1/dc4a72aa2049c34a53a220290b1a59fadae61929dff3a6e1a830a22971fe/cymem-2.0.11-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached cymem-2.0.11-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.5 kB)
+Collecting preshed<3.1.0,>=3.0.2 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for preshed<3.1.0,>=3.0.2 from https://files.pythonhosted.org/packages/c4/73/9206a60e59e81a259d49273f95307821f5e88c84c400533ed0cb9a8093af/preshed-3.0.10-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached preshed-3.0.10-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.4 kB)
+Collecting thinc<8.4.0,>=8.3.4 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for thinc<8.4.0,>=8.3.4 from https://files.pythonhosted.org/packages/c0/eb/12681892dbcaa45eedeb37dcf40251ea47e22e97413e6d4209fa4db2b9f2/thinc-8.3.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached thinc-8.3.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (15 kB)
+Collecting wasabi<1.2.0,>=0.9.1 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for wasabi<1.2.0,>=0.9.1 from https://files.pythonhosted.org/packages/06/7c/34330a89da55610daa5f245ddce5aab81244321101614751e7537f125133/wasabi-1.1.3-py3-none-any.whl.metadata
+  Using cached wasabi-1.1.3-py3-none-any.whl.metadata (28 kB)
+Collecting srsly<3.0.0,>=2.4.3 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for srsly<3.0.0,>=2.4.3 from https://files.pythonhosted.org/packages/ce/d8/1039e663b87a06d2450148ebadc07eaf6f8b7dd7f7d5e2f4221050ce6702/srsly-2.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached srsly-2.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting catalogue<2.1.0,>=2.0.6 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for catalogue<2.1.0,>=2.0.6 from https://files.pythonhosted.org/packages/9e/96/d32b941a501ab566a16358d68b6eb4e4acc373fab3c3c4d7d9e649f7b4bb/catalogue-2.0.10-py3-none-any.whl.metadata
+  Using cached catalogue-2.0.10-py3-none-any.whl.metadata (14 kB)
+Collecting weasel<0.5.0,>=0.1.0 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for weasel<0.5.0,>=0.1.0 from https://files.pythonhosted.org/packages/2a/87/abd57374044e1f627f0a905ac33c1a7daab35a3a815abfea4e1bafd3fdb1/weasel-0.4.1-py3-none-any.whl.metadata
+  Using cached weasel-0.4.1-py3-none-any.whl.metadata (4.6 kB)
+Collecting typer<1.0.0,>=0.3.0 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for typer<1.0.0,>=0.3.0 from https://files.pythonhosted.org/packages/00/22/35617eee79080a5d071d0f14ad698d325ee6b3bf824fc0467c03b30e7fa8/typer-0.19.2-py3-none-any.whl.metadata
+  Using cached typer-0.19.2-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: setuptools in ./.venv/lib/python3.10/site-packages (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4)) (80.9.0)
+Collecting langcodes<4.0.0,>=3.2.0 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for langcodes<4.0.0,>=3.2.0 from https://files.pythonhosted.org/packages/c3/6b/068c2ea7a712bf805c62445bd9e9c06d7340358ef2824150eceac027444b/langcodes-3.5.0-py3-none-any.whl.metadata
+  Using cached langcodes-3.5.0-py3-none-any.whl.metadata (29 kB)
+Collecting language-data>=1.2 (from langcodes<4.0.0,>=3.2.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for language-data>=1.2 from https://files.pythonhosted.org/packages/5d/e9/5a5ffd9b286db82be70d677d0a91e4d58f7912bb8dd026ddeeb4abe70679/language_data-1.3.0-py3-none-any.whl.metadata
+  Using cached language_data-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for annotated-types>=0.6.0 from https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.1 (from pydantic->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pydantic-core==2.41.1 from https://files.pythonhosted.org/packages/53/25/cd47df3bfb24350e03835f0950288d1054f1cc9a8023401dabe6d4ff2834/pydantic_core-2.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached pydantic_core-2.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for typing-inspection>=0.4.2 from https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl.metadata
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting blis<1.4.0,>=1.3.0 (from thinc<8.4.0,>=8.3.4->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for blis<1.4.0,>=1.3.0 from https://files.pythonhosted.org/packages/52/b1/be8346c859967d09a8d5bc61c06131885e0124eb84c8cec599c509beb5c4/blis-1.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached blis-1.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.4 kB)
+Collecting confection<1.0.0,>=0.0.1 (from thinc<8.4.0,>=8.3.4->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for confection<1.0.0,>=0.0.1 from https://files.pythonhosted.org/packages/0c/00/3106b1854b45bd0474ced037dfe6b73b90fe68a68968cef47c23de3d43d2/confection-0.1.5-py3-none-any.whl.metadata
+  Using cached confection-0.1.5-py3-none-any.whl.metadata (19 kB)
+INFO: pip is looking at multiple versions of thinc to determine which version is compatible with other requirements. This could take a while.
+Collecting thinc<8.4.0,>=8.3.4 (from spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for thinc<8.4.0,>=8.3.4 from https://files.pythonhosted.org/packages/5d/5f/8a88959191f8c9f7eed61a7efec45f0222720c6318c09f9a058609810128/thinc-8.3.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached thinc-8.3.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (15 kB)
+Collecting blis<1.3.0,>=1.2.0 (from thinc<8.4.0,>=8.3.4->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for blis<1.3.0,>=1.2.0 from https://files.pythonhosted.org/packages/30/f2/b52d4c18b116dc3feda9269e3f944defe1e9d12ec157b1ae5ec823191834/blis-1.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Using cached blis-1.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.4 kB)
+Collecting shellingham>=1.3.0 (from typer<1.0.0,>=0.3.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for shellingham>=1.3.0 from https://files.pythonhosted.org/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl.metadata
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=10.11.0 (from typer<1.0.0,>=0.3.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for rich>=10.11.0 from https://files.pythonhosted.org/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl.metadata
+  Using cached rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting cloudpathlib<1.0.0,>=0.7.0 (from weasel<0.5.0,>=0.1.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for cloudpathlib<1.0.0,>=0.7.0 from https://files.pythonhosted.org/packages/ae/8a/c4bb04426d608be4a3171efa2e233d2c59a5c8937850c10d098e126df18e/cloudpathlib-0.23.0-py3-none-any.whl.metadata
+  Using cached cloudpathlib-0.23.0-py3-none-any.whl.metadata (16 kB)
+Collecting smart-open<8.0.0,>=5.2.1 (from weasel<0.5.0,>=0.1.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for smart-open<8.0.0,>=5.2.1 from https://files.pythonhosted.org/packages/e5/d9/460cf1d58945dd771c228c29d5664f431dfc4060d3d092fed40546b11472/smart_open-7.3.1-py3-none-any.whl.metadata
+  Using cached smart_open-7.3.1-py3-none-any.whl.metadata (24 kB)
+Collecting wrapt (from smart-open<8.0.0,>=5.2.1->weasel<0.5.0,>=0.1.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for wrapt from https://files.pythonhosted.org/packages/de/17/9f8f86755c191d6779d7ddead1a53c7a8aa18bccb7cea8e7e72dfa6a8a09/wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata
+  Using cached wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+Collecting marisa-trie>=1.1.0 (from language-data>=1.2->langcodes<4.0.0,>=3.2.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for marisa-trie>=1.1.0 from https://files.pythonhosted.org/packages/a6/b4/3b60c26cb9a2c623f47eeed84cfa6ebd3f71c5bd95ef32ed526e4ac689dc/marisa_trie-1.3.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached marisa_trie-1.3.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for markdown-it-py>=2.2.0 from https://files.pythonhosted.org/packages/94/54/e7d793b573f298e1c9013b8c4dade17d481164aa517d1d7148619c2cedbf/markdown_it_py-4.0.0-py3-none-any.whl.metadata
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pygments<3.0.0,>=2.13.0 from https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl.metadata
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<1.0.0,>=0.3.0->spacy>=3.4.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for mdurl~=0.1 from https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl.metadata
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting sympy>=1.13.3 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for sympy>=1.13.3 from https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl.metadata
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/3f/a1/46c1b6e202e3109d2a035b21a7e5534c5bb233ee30752d7f16a0bd4c3989/networkx-3.5rc0-py3-none-any.whl (from https://pypi.org/simple/networkx/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/90/7e/0319606a20ced20730806b9f7fe91d8a92f7da63d76a5c388f87d3f7d294/networkx-3.5rc0.tar.gz (from https://pypi.org/simple/networkx/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/eb/8d/776adee7bbf76365fdd7f2552710282c79a4ead5d2a46408c9043a2b70ba/networkx-3.5-py3-none-any.whl (from https://pypi.org/simple/networkx/) (requires-python:>=3.11)
+  Link requires a different Python (3.10.12 not in: '>=3.11'): https://files.pythonhosted.org/packages/6c/4f/ccdb8ad3a38e583f214547fd2f7ff1fc160c43a75af88e6aec213404b96a/networkx-3.5.tar.gz (from https://pypi.org/simple/networkx/) (requires-python:>=3.11)
+Collecting networkx (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for networkx from https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl.metadata
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.8.93 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cuda-nvrtc-cu12==12.8.93 from https://files.pythonhosted.org/packages/05/6b/32f747947df2da6994e999492ab306a903659555dddc0fbdeb9d71f75e52/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata
+  Using cached nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-runtime-cu12==12.8.90 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cuda-runtime-cu12==12.8.90 from https://files.pythonhosted.org/packages/0d/9b/a997b638fcd068ad6e4d53b8551a7d30fe8b404d6f1804abf1df69838932/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-cupti-cu12==12.8.90 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cuda-cupti-cu12==12.8.90 from https://files.pythonhosted.org/packages/f8/02/2adcaa145158bf1a8295d83591d22e4103dbfd821bcaf6f3f53151ca4ffa/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cudnn-cu12==9.10.2.21 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cudnn-cu12==9.10.2.21 from https://files.pythonhosted.org/packages/ba/51/e123d997aa098c61d029f76663dedbfb9bc8dcf8c60cbd6adbe42f76d049/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl.metadata
+  Using cached nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cublas-cu12==12.8.4.1 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cublas-cu12==12.8.4.1 from https://files.pythonhosted.org/packages/dc/61/e24b560ab2e2eaeb3c839129175fb330dfcfc29e5203196e5541a4c44682/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl.metadata
+  Using cached nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cufft-cu12==11.3.3.83 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cufft-cu12==11.3.3.83 from https://files.pythonhosted.org/packages/1f/13/ee4e00f30e676b66ae65b4f08cb5bcbb8392c03f54f2d5413ea99a5d1c80/nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-curand-cu12==10.3.9.90 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-curand-cu12==10.3.9.90 from https://files.pythonhosted.org/packages/fb/aa/6584b56dc84ebe9cf93226a5cde4d99080c8e90ab40f0c27bda7a0f29aa1/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl.metadata
+  Using cached nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cusolver-cu12==11.7.3.90 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cusolver-cu12==11.7.3.90 from https://files.pythonhosted.org/packages/85/48/9a13d2975803e8cf2777d5ed57b87a0b6ca2cc795f9a4f59796a910bfb80/nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl.metadata
+  Using cached nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cusparse-cu12==12.5.8.93 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cusparse-cu12==12.5.8.93 from https://files.pythonhosted.org/packages/c2/f5/e1854cb2f2bcd4280c44736c93550cc300ff4b8c95ebe370d0aa7d2b473d/nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cusparselt-cu12==0.7.1 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cusparselt-cu12==0.7.1 from https://files.pythonhosted.org/packages/56/79/12978b96bd44274fe38b5dde5cfb660b1d114f70a65ef962bcbbed99b549/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl.metadata
+  Using cached nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl.metadata (7.0 kB)
+Collecting nvidia-nccl-cu12==2.27.3 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-nccl-cu12==2.27.3 from https://files.pythonhosted.org/packages/5c/5b/4e4fff7bad39adf89f735f2bc87248c81db71205b62bcc0d5ca5b606b3c3/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.0 kB)
+Collecting nvidia-nvtx-cu12==12.8.90 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-nvtx-cu12==12.8.90 from https://files.pythonhosted.org/packages/a2/eb/86626c1bbc2edb86323022371c39aa48df6fd8b0a1647bc274577f72e90b/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvjitlink-cu12==12.8.93 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-nvjitlink-cu12==12.8.93 from https://files.pythonhosted.org/packages/f6/74/86a07f1d0f42998ca31312f998bd3b9a7eff7f52378f4f270c8679c77fb9/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata
+  Using cached nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cufile-cu12==1.13.1.3 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for nvidia-cufile-cu12==1.13.1.3 from https://files.pythonhosted.org/packages/bb/fe/1bcba1dfbfb8d01be8d93f07bfc502c93fa23afa6fd5ab3fc7c1df71038a/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata
+  Using cached nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting triton==3.4.0 (from torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for triton==3.4.0 from https://files.pythonhosted.org/packages/62/ee/0ee5f64a87eeda19bbad9bc54ae5ca5b98186ed00055281fd40fb4beb10e/triton-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata
+  Using cached triton-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=1.9.0->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for mpmath<1.4,>=1.1.0 from https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl.metadata
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting httplib2<1.0.0,>=0.19.0 (from google-api-python-client->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for httplib2<1.0.0,>=0.19.0 from https://files.pythonhosted.org/packages/8c/a2/0d269db0f6163be503775dc8b6a6fa15820cc9fdc866f6ba608d86b721f2/httplib2-0.31.0-py3-none-any.whl.metadata
+  Downloading httplib2-0.31.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-auth-httplib2<1.0.0,>=0.2.0 (from google-api-python-client->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for google-auth-httplib2<1.0.0,>=0.2.0 from https://files.pythonhosted.org/packages/be/8a/fe34d2f3f9470a27b01c9e76226965863f153d5fbe276f83608562e49c04/google_auth_httplib2-0.2.0-py2.py3-none-any.whl.metadata
+  Using cached google_auth_httplib2-0.2.0-py2.py3-none-any.whl.metadata (2.2 kB)
+Collecting uritemplate<5,>=3.0.1 (from google-api-python-client->google-generativeai==0.8.5->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for uritemplate<5,>=3.0.1 from https://files.pythonhosted.org/packages/a9/99/3ae339466c9183ea5b8ae87b34c0b897eda475d2aec2307cae60e5cd4f29/uritemplate-4.2.0-py3-none-any.whl.metadata
+  Using cached uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting decorator (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for decorator from https://files.pythonhosted.org/packages/4e/8c/f3147f5c4b73e7550fe5f9352eaa956ae838d5c51eb58e7a25b9f3e2643b/decorator-5.2.1-py3-none-any.whl.metadata
+  Using cached decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting exceptiongroup (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for exceptiongroup from https://files.pythonhosted.org/packages/36/f4/c6e662dade71f56cd2f3735141b265c3c79293c109549c1e6933b0651ffc/exceptiongroup-1.3.0-py3-none-any.whl.metadata
+  Using cached exceptiongroup-1.3.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting jedi>=0.16 (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for jedi>=0.16 from https://files.pythonhosted.org/packages/c0/5a/9cac0c82afec3d09ccd97c8b6502d48f165f9124db81b4bcb90b4af974ee/jedi-0.19.2-py2.py3-none-any.whl.metadata
+  Using cached jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting matplotlib-inline (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for matplotlib-inline from https://files.pythonhosted.org/packages/8f/8e/9ad090d3553c280a8060fbf6e24dc1c0c29704ee7d1c372f0c174aa59285/matplotlib_inline-0.1.7-py3-none-any.whl.metadata
+  Using cached matplotlib_inline-0.1.7-py3-none-any.whl.metadata (3.9 kB)
+Collecting pexpect>4.3 (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pexpect>4.3 from https://files.pythonhosted.org/packages/9e/c3/059298687310d527a58bb01f3b1965787ee3b40dce76752eda8b44e9a2c5/pexpect-4.9.0-py2.py3-none-any.whl.metadata
+  Using cached pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for prompt_toolkit<3.1.0,>=3.0.41 from https://files.pythonhosted.org/packages/84/03/0d3ce49e2505ae70cf43bc5bb3033955d2fc9f932163e84dc0779cc47f48/prompt_toolkit-3.0.52-py3-none-any.whl.metadata
+  Using cached prompt_toolkit-3.0.52-py3-none-any.whl.metadata (6.4 kB)
+Collecting stack_data (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for stack_data from https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl.metadata
+  Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting traitlets>=5.13.0 (from ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for traitlets>=5.13.0 from https://files.pythonhosted.org/packages/00/c0/8f5d070730d7836adc9c9b6408dec68c6ced86b304a9b26a14df072a6e8c/traitlets-5.14.3-py3-none-any.whl.metadata
+  Using cached traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting wcwidth (from prompt_toolkit<3.1.0,>=3.0.41->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for wcwidth from https://files.pythonhosted.org/packages/af/b5/123f13c975e9f27ab9c0770f514345bd406d0e8d3b7a0723af9d43f710af/wcwidth-0.2.14-py2.py3-none-any.whl.metadata
+  Using cached wcwidth-0.2.14-py2.py3-none-any.whl.metadata (15 kB)
+Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.16->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for parso<0.9.0,>=0.8.4 from https://files.pythonhosted.org/packages/16/32/f8e3c85d1d5250232a5d3477a2a28cc291968ff175caeadaf3cc19ce0e4a/parso-0.8.5-py2.py3-none-any.whl.metadata
+  Using cached parso-0.8.5-py2.py3-none-any.whl.metadata (8.3 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for ptyprocess>=0.5 from https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl.metadata
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting executing>=1.2.0 (from stack_data->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for executing>=1.2.0 from https://files.pythonhosted.org/packages/c1/ea/53f2148663b321f21b5a606bd5f191517cf40b7072c0497d3c92c4a13b1e/executing-2.2.1-py2.py3-none-any.whl.metadata
+  Using cached executing-2.2.1-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting asttokens>=2.1.0 (from stack_data->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for asttokens>=2.1.0 from https://files.pythonhosted.org/packages/25/8a/c46dcc25341b5bce5472c718902eb3d38600a903b14fa6aeecef3f21a46f/asttokens-3.0.0-py3-none-any.whl.metadata
+  Using cached asttokens-3.0.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting pure-eval (from stack_data->ipython->laiser>=0.3.0->-r requirements.txt (line 4))
+  Obtaining dependency information for pure-eval from https://files.pythonhosted.org/packages/8e/37/efad0257dc6e593a18957422533ff0f87ede7c9c6ea010a2177d738fb82f/pure_eval-0.2.3-py3-none-any.whl.metadata
+  Using cached pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+Using cached flask-3.0.0-py3-none-any.whl (99 kB)
+Using cached numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+Using cached scikit_learn-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.8 MB)
+Using cached laiser-0.3.0-py3-none-any.whl (61.6 MB)
+Using cached google_generativeai-0.8.5-py3-none-any.whl (155 kB)
+Using cached google_ai_generativelanguage-0.6.15-py3-none-any.whl (1.3 MB)
+Using cached google_api_core-2.26.0-py3-none-any.whl (162 kB)
+Using cached google_auth-2.41.1-py2.py3-none-any.whl (221 kB)
+Using cached cachetools-6.2.0-py3-none-any.whl (11 kB)
+Using cached googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+Using cached grpcio-1.75.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.5 MB)
+Using cached grpcio_status-1.71.2-py3-none-any.whl (14 kB)
+Using cached proto_plus-1.26.1-py3-none-any.whl (50 kB)
+Using cached protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (152 kB)
+Downloading idna-3.10-py3-none-any.whl (70 kB)
+Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+Using cached pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+Using cached matplotlib-3.10.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached wordcloud-1.9.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (511 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+Using cached click-8.3.0-py3-none-any.whl (107 kB)
+Using cached contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached faiss_cpu-1.12.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (31.4 MB)
+Using cached fonttools-4.60.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.8 MB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached joblib-1.5.2-py3-none-any.whl (308 kB)
+Using cached kiwisolver-1.4.9-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+Using cached markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pillow-11.3.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+Downloading pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+Using cached sentence_transformers-5.1.1-py3-none-any.whl (486 kB)
+Using cached transformers-4.57.0-py3-none-any.whl (12.0 MB)
+Using cached huggingface_hub-0.35.3-py3-none-any.whl (564 kB)
+Using cached hf_xet-1.1.10-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+Using cached tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+Using cached fsspec-2025.9.0-py3-none-any.whl (199 kB)
+Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 1.1 MB/s  0:00:02
+Using cached regex-2025.9.18-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (789 kB)
+Using cached safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (485 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached spacy-3.8.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (31.5 MB)
+Using cached catalogue-2.0.10-py3-none-any.whl (17 kB)
+Using cached cymem-2.0.11-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (204 kB)
+Using cached langcodes-3.5.0-py3-none-any.whl (182 kB)
+Using cached murmurhash-1.0.13-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (117 kB)
+Using cached preshed-3.0.10-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (795 kB)
+Using cached pydantic-2.12.0-py3-none-any.whl (459 kB)
+Using cached pydantic_core-2.41.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+Using cached spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Using cached spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Using cached srsly-2.5.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.1 MB)
+Using cached thinc-8.3.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.7 MB)
+Using cached blis-1.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Using cached confection-0.1.5-py3-none-any.whl (35 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached typer-0.19.2-py3-none-any.whl (46 kB)
+Using cached wasabi-1.1.3-py3-none-any.whl (27 kB)
+Using cached weasel-0.4.1-py3-none-any.whl (50 kB)
+Using cached cloudpathlib-0.23.0-py3-none-any.whl (62 kB)
+Using cached smart_open-7.3.1-py3-none-any.whl (61 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached language_data-1.3.0-py3-none-any.whl (5.4 MB)
+Using cached marisa_trie-1.3.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (1.2 MB)
+Using cached rich-14.2.0-py3-none-any.whl (243 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Using cached markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached torch-2.8.0-cp310-cp310-manylinux_2_28_x86_64.whl (888.0 MB)
+Using cached nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl (594.3 MB)
+Using cached nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.2 MB)
+Using cached nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (88.0 MB)
+Using cached nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (954 kB)
+Using cached nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl (706.8 MB)
+Using cached nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (193.1 MB)
+Using cached nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+Using cached nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl (63.6 MB)
+Using cached nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl (267.5 MB)
+Using cached nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (288.2 MB)
+Using cached nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl (287.2 MB)
+Using cached nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (322.4 MB)
+Using cached nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.3 MB)
+Using cached nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89 kB)
+Using cached triton-3.4.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.4 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Using cached filelock-3.20.0-py3-none-any.whl (16 kB)
+Using cached google_api_python_client-2.184.0-py3-none-any.whl (14.3 MB)
+Using cached google_auth_httplib2-0.2.0-py2.py3-none-any.whl (9.3 kB)
+Downloading httplib2-0.31.0-py3-none-any.whl (91 kB)
+Using cached uritemplate-4.2.0-py3-none-any.whl (11 kB)
+Using cached ipython-8.37.0-py3-none-any.whl (831 kB)
+Using cached prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+Using cached jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+Using cached parso-0.8.5-py2.py3-none-any.whl (106 kB)
+Using cached pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached traitlets-5.14.3-py3-none-any.whl (85 kB)
+Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Using cached exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+Using cached jellyfish-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (357 kB)
+Using cached matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached nltk-3.9.2-py3-none-any.whl (1.5 MB)
+Using cached psutil-7.1.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (291 kB)
+Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Using cached asttokens-3.0.0-py3-none-any.whl (26 kB)
+Using cached executing-2.2.1-py2.py3-none-any.whl (28 kB)
+Using cached pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Using cached wcwidth-0.2.14-py2.py3-none-any.whl (37 kB)
+Using cached wrapt-1.17.3-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (81 kB)
+Installing collected packages: pytz, pure-eval, ptyprocess, nvidia-cusparselt-cu12, mpmath, cymem, wrapt, wcwidth, wasabi, urllib3, uritemplate, tzdata, typing-extensions, triton, traitlets, tqdm, threadpoolctl, sympy, spacy-loggers, spacy-legacy, six, shellingham, safetensors, regex, pyyaml, pyparsing, pygments, pyasn1, psutil, protobuf, pillow, pexpect, parso, packaging, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, murmurhash, mdurl, MarkupSafe, marisa-trie, kiwisolver, joblib, jellyfish, itsdangerous, idna, hf-xet, fsspec, fonttools, filelock, executing, decorator, cycler, click, charset_normalizer, certifi, catalogue, cachetools, blinker, asttokens, annotated-types, Werkzeug, typing-inspection, stack_data, srsly, smart-open, scipy, rsa, requests, python-dateutil, pydantic-core, pyasn1-modules, proto-plus, prompt_toolkit, preshed, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, nltk, matplotlib-inline, markdown-it-py, language-data, Jinja2, jedi, httplib2, grpcio, googleapis-common-protos, faiss-cpu, exceptiongroup, contourpy, cloudpathlib, blis, scikit-learn, rich, pydantic, pandas, nvidia-cusolver-cu12, matplotlib, langcodes, ipython, huggingface-hub, grpcio-status, google-auth, flask, wordcloud, typer, torch, tokenizers, google-auth-httplib2, google-api-core, confection, weasel, transformers, thinc, google-api-python-client, spacy, sentence-transformers, google-ai-generativelanguage, skillNer, google-generativeai, laiser
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/proton to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/proton-viewer to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/tqdm to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/isympy to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pygmentize to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/f2py to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/fonttools to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyftmerge to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyftsubset to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/ttx to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/normalizer to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-decrypt to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-encrypt to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-keygen to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-priv2pub to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-sign to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/pyrsa-verify to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/nltk to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/markdown-it to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/ipython to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/ipython3 to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/hf to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/huggingface-cli to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/tiny-agents to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/flask to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/wordcloud_cli to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/typer to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/torchfrtrace to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/torchrun to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/weasel to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/transformers to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/transformers-cli to 777
+  changing mode of /mnt/c/Users/chipo/OneDrive/Documents/Projects/LaborIQ/.venv/bin/spacy to 777
+
+Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.3 annotated-types-0.7.0 asttokens-3.0.0 blinker-1.9.0 blis-1.2.1 cachetools-6.2.0 catalogue-2.0.10 certifi-2025.10.5 charset_normalizer-3.4.3 click-8.3.0 cloudpathlib-0.23.0 confection-0.1.5 contourpy-1.3.2 cycler-0.12.1 cymem-2.0.11 decorator-5.2.1 exceptiongroup-1.3.0 executing-2.2.1 faiss-cpu-1.12.0 filelock-3.20.0 flask-3.0.0 fonttools-4.60.1 fsspec-2025.9.0 google-ai-generativelanguage-0.6.15 google-api-core-2.26.0 google-api-python-client-2.184.0 google-auth-2.41.1 google-auth-httplib2-0.2.0 google-generativeai-0.8.5 googleapis-common-protos-1.70.0 grpcio-1.75.1 grpcio-status-1.71.2 hf-xet-1.1.10 httplib2-0.31.0 huggingface-hub-0.35.3 idna-3.10 ipython-8.37.0 itsdangerous-2.2.0 jedi-0.19.2 jellyfish-1.2.0 joblib-1.5.2 kiwisolver-1.4.9 laiser-0.3.0 langcodes-3.5.0 language-data-1.3.0 marisa-trie-1.3.1 markdown-it-py-4.0.0 matplotlib-3.10.7 matplotlib-inline-0.1.7 mdurl-0.1.2 mpmath-1.3.0 murmurhash-1.0.13 networkx-3.4.2 nltk-3.9.2 numpy-1.26.4 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.90 nvidia-cusolver-cu12-11.7.3.90 nvidia-cusparse-cu12-12.5.8.93 nvidia-cusparselt-cu12-0.7.1 nvidia-nccl-cu12-2.27.3 nvidia-nvjitlink-cu12-12.8.93 nvidia-nvtx-cu12-12.8.90 packaging-25.0 pandas-2.3.3 parso-0.8.5 pexpect-4.9.0 pillow-11.3.0 preshed-3.0.10 prompt_toolkit-3.0.52 proto-plus-1.26.1 protobuf-5.29.5 psutil-7.1.0 ptyprocess-0.7.0 pure-eval-0.2.3 pyasn1-0.6.1 pyasn1-modules-0.4.2 pydantic-2.12.0 pydantic-core-2.41.1 pygments-2.19.2 pyparsing-3.2.5 python-dateutil-2.9.0.post0 pytz-2025.2 pyyaml-6.0.3 regex-2025.9.18 requests-2.32.5 rich-14.2.0 rsa-4.9.1 safetensors-0.6.2 scikit-learn-1.3.2 scipy-1.15.3 sentence-transformers-5.1.1 shellingham-1.5.4 six-1.17.0 skillNer-1.0.3 smart-open-7.3.1 spacy-3.8.7 spacy-legacy-3.0.12 spacy-loggers-1.0.5 srsly-2.5.1 stack_data-0.6.3 sympy-1.14.0 thinc-8.3.4 threadpoolctl-3.6.0 tokenizers-0.22.1 torch-2.8.0 tqdm-4.67.1 traitlets-5.14.3 transformers-4.57.0 triton-3.4.0 typer-0.19.2 typing-extensions-4.15.0 typing-inspection-0.4.2 tzdata-2025.2 uritemplate-4.2.0 urllib3-2.5.0 wasabi-1.1.3 wcwidth-0.2.14 weasel-0.4.1 wordcloud-1.9.4 wrapt-1.17.3
