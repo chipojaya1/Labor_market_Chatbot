@@ -2,6 +2,8 @@
 
 To support aspiring data scientists, the repository now also contains a lightweight Retrieval-Augmented Generation (RAG) prototype built with Flask (`app/`). The service indexes curated Bureau of Labor Statistics (BLS) and Glassdoor insights stored in `data/rag_corpus.json` and exposes a `/ask` endpoint plus a minimal chat interface. Each response surfaces bullet-point guidance with explicit source citations, aligning with the transparency requirement for career-planning research.
 
+The chatbot now also ships with a lightweight SQLite layer that mirrors the three cleaned CSV datasets (`Glassdoor_Salary_Cleaned_Version.csv`, `bls_macro_indicators_cleaned.csv`, and `oews_cleaned_2024.csv`). This enables tool-calling agents to run precise analytical queries. Visit `GET /schema` to inspect the generated schema and the accompanying function-calling specification, or `POST /function/query` with a JSON payload such as `{"sql": "SELECT * FROM oews_salary LIMIT 5"}` to execute read-only SQL.
+
 ## Quickstart
 
 ```bash
