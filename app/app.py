@@ -8,8 +8,13 @@ from .rag import RagPipeline
 def create_app() -> Flask:
     app = Flask(__name__)
 
+    # Prefer a DB-backed RAG corpus if provided, otherwise fallback to JSON file
+    rag_db = os.getenv("RAG_DB_PATH")
     corpus_path = os.getenv("RAG_CORPUS_PATH", "data/rag_corpus.json")
-    app.rag_pipeline = RagPipeline(corpus_path=corpus_path)  # type: ignore[attr-defined]
+    if rag_db:
+        app.rag_pipeline = RagPipeline(db_path=rag_db)  # type: ignore[attr-defined]
+    else:
+        app.rag_pipeline = RagPipeline(corpus_path=corpus_path)  # type: ignore[attr-defined]
 
     @app.route("/")
     def index():
