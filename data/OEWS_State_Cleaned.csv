@@ -1,0 +1,210 @@
+,AREA_TITLE,PRIM_STATE,AREA_TYPE,OCC_CODE,OCC_TITLE,TOT_EMP,JOBS_1000,A_MEAN,A_MEDIAN
+0,Alabama,AL,2,15-1242,Database Administrators,1990,0.953,92930,88560
+1,Alabama,AL,2,15-1243,Database Architects,310,0.147,117510,111330
+2,Alabama,AL,2,15-2051,Data Scientists,1620,0.773,102970,105410
+3,Alabama,AL,2,43-9021,Data Entry Keyers,1110,0.531,35050,33670
+4,Alaska,AK,2,15-1242,Database Administrators,90,0.268,96600,93180
+5,Alaska,AK,2,15-1243,Database Architects,40,0.129,111570,113800
+6,Alaska,AK,2,15-2051,Data Scientists,210,0.651,88690,77400
+7,Alaska,AK,2,43-9021,Data Entry Keyers,210,0.668,45230,42050
+8,Arizona,AZ,2,15-1242,Database Administrators,1330,0.415,97340,96320
+9,Arizona,AZ,2,15-1243,Database Architects,850,0.267,135080,130620
+10,Arizona,AZ,2,15-2051,Data Scientists,4080,1.275,112460,106080
+11,Arizona,AZ,2,43-9021,Data Entry Keyers,3750,1.173,44070,42800
+12,Arkansas,AR,2,15-1242,Database Administrators,600,0.462,82780,79710
+13,Arkansas,AR,2,15-1243,Database Architects,330,0.258,109380,101000
+14,Arkansas,AR,2,15-2051,Data Scientists,470,0.366,104560,104320
+15,Arkansas,AR,2,43-9021,Data Entry Keyers,880,0.682,36760,34840
+16,California,CA,2,15-1242,Database Administrators,8360,0.463,119060,111090
+17,California,CA,2,15-1243,Database Architects,5850,0.324,162820,159130
+18,California,CA,2,15-2051,Data Scientists,36850,2.041,155450,136800
+19,California,CA,2,43-9021,Data Entry Keyers,14040,0.777,47210,45680
+20,Colorado,CO,2,15-1242,Database Administrators,1400,0.484,115970,119940
+21,Colorado,CO,2,15-1243,Database Architects,2140,0.74,152940,151460
+22,Colorado,CO,2,15-2051,Data Scientists,6750,2.334,118250,106500
+23,Colorado,CO,2,43-9021,Data Entry Keyers,2040,0.705,48040,45560
+24,Connecticut,CT,2,15-1242,Database Administrators,770,0.457,103400,101990
+25,Connecticut,CT,2,15-1243,Database Architects,700,0.414,147910,147400
+26,Connecticut,CT,2,15-2051,Data Scientists,1630,0.972,120270,109960
+27,Connecticut,CT,2,43-9021,Data Entry Keyers,890,0.528,47480,46020
+28,Delaware,DE,2,15-1242,Database Administrators,730,1.534,105850,100240
+29,Delaware,DE,2,15-1243,Database Architects,**,**,150060,146430
+30,Delaware,DE,2,15-2051,Data Scientists,540,1.129,*,*
+31,Delaware,DE,2,43-9021,Data Entry Keyers,530,1.105,39050,37190
+32,District of Columbia,DC,2,15-1242,Database Administrators,550,0.774,120470,128440
+33,District of Columbia,DC,2,15-1243,Database Architects,800,1.123,158550,157080
+34,District of Columbia,DC,2,15-2051,Data Scientists,3580,5.047,148170,137120
+35,District of Columbia,DC,2,43-9021,Data Entry Keyers,320,0.457,57560,51860
+36,Florida,FL,2,15-1242,Database Administrators,4080,0.416,102900,97900
+37,Florida,FL,2,15-1243,Database Architects,2040,0.208,138280,133040
+38,Florida,FL,2,15-2051,Data Scientists,9480,0.965,117670,105820
+39,Florida,FL,2,43-9021,Data Entry Keyers,9280,0.945,39620,38100
+40,Georgia,GA,2,15-1242,Database Administrators,3020,0.623,105590,106100
+41,Georgia,GA,2,15-1243,Database Architects,2930,0.603,141590,135280
+42,Georgia,GA,2,15-2051,Data Scientists,7730,1.591,111020,102630
+43,Georgia,GA,2,43-9021,Data Entry Keyers,3100,0.639,40840,39800
+44,Hawaii,HI,2,15-1242,Database Administrators,110,0.17,97380,93400
+45,Hawaii,HI,2,15-1243,Database Architects,70,0.106,150190,149500
+46,Hawaii,HI,2,15-2051,Data Scientists,240,0.383,124530,123880
+47,Hawaii,HI,2,43-9021,Data Entry Keyers,260,0.416,*,*
+48,Idaho,ID,2,15-1242,Database Administrators,160,0.185,88440,78780
+49,Idaho,ID,2,15-1243,Database Architects,350,0.416,130240,126030
+50,Idaho,ID,2,15-2051,Data Scientists,980,1.157,120410,109340
+51,Idaho,ID,2,43-9021,Data Entry Keyers,560,0.668,39530,36400
+52,Illinois,IL,2,15-1242,Database Administrators,2290,0.378,107750,101070
+53,Illinois,IL,2,15-1243,Database Architects,1460,0.241,136370,134490
+54,Illinois,IL,2,15-2051,Data Scientists,7390,1.218,119010,113490
+55,Illinois,IL,2,43-9021,Data Entry Keyers,6680,1.102,42050,39450
+56,Indiana,IN,2,15-1242,Database Administrators,1180,0.372,85480,83600
+57,Indiana,IN,2,15-1243,Database Architects,670,0.209,132150,133150
+58,Indiana,IN,2,15-2051,Data Scientists,3120,0.979,92620,84050
+59,Indiana,IN,2,43-9021,Data Entry Keyers,2690,0.844,40770,39800
+60,Iowa,IA,2,15-1242,Database Administrators,380,0.243,101500,97690
+61,Iowa,IA,2,15-1243,Database Architects,280,0.182,124910,131370
+62,Iowa,IA,2,15-2051,Data Scientists,2330,1.49,97300,97980
+63,Iowa,IA,2,43-9021,Data Entry Keyers,910,0.585,41770,41090
+64,Kansas,KS,2,15-1242,Database Administrators,560,0.392,118250,112740
+65,Kansas,KS,2,15-1243,Database Architects,390,0.271,124980,129060
+66,Kansas,KS,2,15-2051,Data Scientists,340,0.237,107300,110320
+67,Kansas,KS,2,43-9021,Data Entry Keyers,850,0.592,37720,37710
+68,Kentucky,KY,2,15-1242,Database Administrators,770,0.388,86490,83980
+69,Kentucky,KY,2,15-1243,Database Architects,510,0.254,110400,102560
+70,Kentucky,KY,2,15-2051,Data Scientists,1700,0.852,100410,93490
+71,Kentucky,KY,2,43-9021,Data Entry Keyers,1600,0.801,36430,36400
+72,Louisiana,LA,2,15-1242,Database Administrators,240,0.127,89230,86420
+73,Louisiana,LA,2,15-1243,Database Architects,350,0.184,*,*
+74,Louisiana,LA,2,15-2051,Data Scientists,1120,0.585,71740,70530
+75,Louisiana,LA,2,43-9021,Data Entry Keyers,1540,0.807,38910,36630
+76,Maine,ME,2,15-1242,Database Administrators,230,0.368,82210,76980
+77,Maine,ME,2,15-1243,Database Architects,250,0.389,134200,154790
+78,Maine,ME,2,15-2051,Data Scientists,1040,1.641,101890,94350
+79,Maine,ME,2,43-9021,Data Entry Keyers,200,0.322,45290,43720
+80,Maryland,MD,2,15-1242,Database Administrators,2640,0.963,124430,122110
+81,Maryland,MD,2,15-1243,Database Architects,1420,0.516,143020,140710
+82,Maryland,MD,2,15-2051,Data Scientists,3400,1.239,135370,124340
+83,Maryland,MD,2,43-9021,Data Entry Keyers,2520,0.917,39970,36940
+84,Massachusetts,MA,2,15-1242,Database Administrators,1940,0.532,112090,117420
+85,Massachusetts,MA,2,15-1243,Database Architects,1720,0.471,161000,161160
+86,Massachusetts,MA,2,15-2051,Data Scientists,9990,2.743,139670,132250
+87,Massachusetts,MA,2,43-9021,Data Entry Keyers,1840,0.505,47200,46930
+88,Michigan,MI,2,15-1242,Database Administrators,1190,0.27,97660,97880
+89,Michigan,MI,2,15-1243,Database Architects,1150,0.262,117600,120810
+90,Michigan,MI,2,15-2051,Data Scientists,6450,1.47,102030,99470
+91,Michigan,MI,2,43-9021,Data Entry Keyers,2980,0.678,39750,38570
+92,Minnesota,MN,2,15-1242,Database Administrators,970,0.331,101010,97230
+93,Minnesota,MN,2,15-1243,Database Architects,910,0.312,127730,130420
+94,Minnesota,MN,2,15-2051,Data Scientists,3500,1.199,118110,117840
+95,Minnesota,MN,2,43-9021,Data Entry Keyers,1320,0.451,43400,41640
+96,Mississippi,MS,2,15-1242,Database Administrators,230,0.2,84830,86420
+97,Mississippi,MS,2,15-1243,Database Architects,110,0.093,92400,90980
+98,Mississippi,MS,2,15-2051,Data Scientists,270,0.232,77830,69430
+99,Mississippi,MS,2,43-9021,Data Entry Keyers,660,0.565,36090,33530
+100,Missouri,MO,2,15-1242,Database Administrators,1400,0.478,94990,87600
+101,Missouri,MO,2,15-1243,Database Architects,1840,0.629,112730,108820
+102,Missouri,MO,2,15-2051,Data Scientists,4350,1.491,95310,85570
+103,Missouri,MO,2,43-9021,Data Entry Keyers,2220,0.759,43380,36620
+104,Montana,MT,2,15-1242,Database Administrators,240,0.48,83070,80960
+105,Montana,MT,2,15-1243,Database Architects,50,0.099,124500,116250
+106,Montana,MT,2,15-2051,Data Scientists,200,0.394,111490,106860
+107,Montana,MT,2,43-9021,Data Entry Keyers,380,0.748,41310,39750
+108,Nebraska,NE,2,15-1242,Database Administrators,540,0.535,96080,92470
+109,Nebraska,NE,2,15-1243,Database Architects,590,0.584,129750,132320
+110,Nebraska,NE,2,15-2051,Data Scientists,1850,1.817,97720,96470
+111,Nebraska,NE,2,43-9021,Data Entry Keyers,1110,1.096,36390,36330
+112,Nevada,NV,2,15-1242,Database Administrators,470,0.305,87960,86980
+113,Nevada,NV,2,15-1243,Database Architects,320,0.211,124010,130360
+114,Nevada,NV,2,15-2051,Data Scientists,1230,0.802,98820,93310
+115,Nevada,NV,2,43-9021,Data Entry Keyers,480,0.312,40760,37980
+116,New Hampshire,NH,2,15-1242,Database Administrators,230,0.34,109190,121820
+117,New Hampshire,NH,2,15-2051,Data Scientists,870,1.278,102230,98970
+118,New Hampshire,NH,2,43-9021,Data Entry Keyers,780,1.141,42380,41940
+119,New Jersey,NJ,2,15-1242,Database Administrators,2060,0.485,126670,128970
+120,New Jersey,NJ,2,15-1243,Database Architects,2530,0.595,144260,143900
+121,New Jersey,NJ,2,15-2051,Data Scientists,5860,1.379,131800,130370
+122,New Jersey,NJ,2,43-9021,Data Entry Keyers,5240,1.232,44850,43480
+123,New Mexico,NM,2,15-1242,Database Administrators,520,0.609,94480,94850
+124,New Mexico,NM,2,15-1243,Database Architects,130,0.148,117620,120120
+125,New Mexico,NM,2,15-2051,Data Scientists,510,0.589,86520,85040
+126,New Mexico,NM,2,43-9021,Data Entry Keyers,410,0.471,43440,44960
+127,New York,NY,2,15-1242,Database Administrators,3680,0.385,113070,106940
+128,New York,NY,2,15-1243,Database Architects,4180,0.438,137840,128270
+129,New York,NY,2,15-2051,Data Scientists,20070,2.103,133450,125400
+130,New York,NY,2,43-9021,Data Entry Keyers,9890,1.036,45770,42990
+131,North Carolina,NC,2,15-1242,Database Administrators,1990,0.407,106140,108430
+132,North Carolina,NC,2,15-1243,Database Architects,4060,0.829,129750,130560
+133,North Carolina,NC,2,15-2051,Data Scientists,10140,2.071,118020,115380
+134,North Carolina,NC,2,43-9021,Data Entry Keyers,4110,0.839,39720,38580
+135,North Dakota,ND,2,15-1242,Database Administrators,90,0.206,85950,76400
+136,North Dakota,ND,2,15-1243,Database Architects,50,0.111,112830,116120
+137,North Dakota,ND,2,15-2051,Data Scientists,320,0.747,94130,96230
+138,North Dakota,ND,2,43-9021,Data Entry Keyers,60,0.146,*,*
+139,Ohio,OH,2,15-1242,Database Administrators,1770,0.319,96400,94020
+140,Ohio,OH,2,15-1243,Database Architects,2230,0.403,133170,129840
+141,Ohio,OH,2,15-2051,Data Scientists,5510,0.996,100260,98620
+142,Ohio,OH,2,43-9021,Data Entry Keyers,5450,0.986,41120,39810
+143,Oklahoma,OK,2,15-1242,Database Administrators,660,0.391,87430,76980
+144,Oklahoma,OK,2,15-1243,Database Architects,730,0.432,133880,132360
+145,Oklahoma,OK,2,15-2051,Data Scientists,2160,1.276,89940,80380
+146,Oklahoma,OK,2,43-9021,Data Entry Keyers,1760,1.043,36520,35510
+147,Oregon,OR,2,15-1242,Database Administrators,930,0.473,105050,102650
+148,Oregon,OR,2,15-1243,Database Architects,710,0.361,147530,139660
+149,Oregon,OR,2,15-2051,Data Scientists,2650,1.349,124060,106100
+150,Oregon,OR,2,43-9021,Data Entry Keyers,1180,0.599,47230,45650
+151,Pennsylvania,PA,2,15-1242,Database Administrators,5000,0.831,105100,107800
+152,Pennsylvania,PA,2,15-1243,Database Architects,2240,0.372,130130,129040
+153,Pennsylvania,PA,2,15-2051,Data Scientists,10430,1.734,107450,100320
+154,Pennsylvania,PA,2,43-9021,Data Entry Keyers,7350,1.223,41760,42400
+155,Rhode Island,RI,2,15-1242,Database Administrators,320,0.645,104100,103810
+156,Rhode Island,RI,2,15-1243,Database Architects,190,0.389,149350,136510
+157,Rhode Island,RI,2,15-2051,Data Scientists,1190,2.412,119400,114390
+158,Rhode Island,RI,2,43-9021,Data Entry Keyers,290,0.588,46990,46290
+159,South Carolina,SC,2,15-1242,Database Administrators,660,0.293,99890,92670
+160,South Carolina,SC,2,15-1243,Database Architects,730,0.322,128340,128440
+161,South Carolina,SC,2,15-2051,Data Scientists,2810,1.239,96970,90660
+162,South Carolina,SC,2,43-9021,Data Entry Keyers,1520,0.668,38170,36590
+163,South Dakota,SD,2,15-1242,Database Administrators,150,0.325,87610,85890
+164,South Dakota,SD,2,15-1243,Database Architects,60,0.122,121220,127460
+165,South Dakota,SD,2,15-2051,Data Scientists,270,0.586,92460,92000
+166,South Dakota,SD,2,43-9021,Data Entry Keyers,**,**,37390,38140
+167,Tennessee,TN,2,15-1242,Database Administrators,1440,0.438,100650,101640
+168,Tennessee,TN,2,15-1243,Database Architects,680,0.208,125840,128440
+169,Tennessee,TN,2,15-2051,Data Scientists,2550,0.778,114830,104700
+170,Tennessee,TN,2,43-9021,Data Entry Keyers,1860,0.568,40780,39670
+171,Texas,TX,2,15-1242,Database Administrators,6110,0.441,109330,109990
+172,Texas,TX,2,15-1243,Database Architects,6330,0.457,136930,133800
+173,Texas,TX,2,15-2051,Data Scientists,23420,1.691,114800,106540
+174,Texas,TX,2,43-9021,Data Entry Keyers,19950,1.441,38980,37180
+175,Utah,UT,2,15-1242,Database Administrators,800,0.468,105050,97890
+176,Utah,UT,2,15-1243,Database Architects,630,0.369,134470,127770
+177,Utah,UT,2,15-2051,Data Scientists,4830,2.827,119640,116420
+178,Utah,UT,2,43-9021,Data Entry Keyers,2430,1.419,45060,41600
+179,Vermont,VT,2,15-1242,Database Administrators,120,0.407,99980,102170
+180,Vermont,VT,2,15-1243,Database Architects,50,0.15,*,*
+181,Vermont,VT,2,15-2051,Data Scientists,210,0.698,119630,120670
+182,Vermont,VT,2,43-9021,Data Entry Keyers,260,0.852,43580,42590
+183,Virginia,VA,2,15-1242,Database Administrators,4210,1.035,113810,105000
+184,Virginia,VA,2,15-1243,Database Architects,7140,1.755,*,*
+185,Virginia,VA,2,15-2051,Data Scientists,6200,1.525,132230,126070
+186,Virginia,VA,2,43-9021,Data Entry Keyers,3000,0.738,41430,38130
+187,Washington,WA,2,15-1242,Database Administrators,2190,0.618,118000,114700
+188,Washington,WA,2,15-1243,Database Architects,2490,0.702,147540,144050
+189,Washington,WA,2,15-2051,Data Scientists,7930,2.24,162730,158760
+190,Washington,WA,2,43-9021,Data Entry Keyers,1640,0.464,47350,44710
+191,West Virginia,WV,2,15-1242,Database Administrators,230,0.328,73530,65380
+192,West Virginia,WV,2,15-1243,Database Architects,270,0.388,132690,157590
+193,West Virginia,WV,2,15-2051,Data Scientists,220,0.32,102770,95760
+194,West Virginia,WV,2,43-9021,Data Entry Keyers,660,0.943,36830,35700
+195,Wisconsin,WI,2,15-1242,Database Administrators,1380,0.473,104550,98920
+196,Wisconsin,WI,2,15-1243,Database Architects,360,0.123,140770,138930
+197,Wisconsin,WI,2,15-2051,Data Scientists,3640,1.243,105540,100020
+198,Wisconsin,WI,2,43-9021,Data Entry Keyers,2610,0.895,41620,38740
+199,Wyoming,WY,2,15-1242,Database Administrators,100,0.376,73300,69980
+200,Wyoming,WY,2,15-1243,Database Architects,130,0.45,68880,62760
+201,Wyoming,WY,2,15-2051,Data Scientists,**,**,85480,95840
+202,Wyoming,WY,2,43-9021,Data Entry Keyers,130,0.467,45030,41020
+203,Guam,GU,3,43-9021,Data Entry Keyers,110,1.748,27770,27620
+204,Puerto Rico,PR,3,15-1242,Database Administrators,230,0.241,57950,49210
+205,Puerto Rico,PR,3,15-1243,Database Architects,80,0.088,78160,77300
+206,Puerto Rico,PR,3,15-2051,Data Scientists,120,0.122,72370,70690
+207,Puerto Rico,PR,3,43-9021,Data Entry Keyers,2280,2.428,27620,23270
+208,Virgin Islands,VI,3,43-9021,Data Entry Keyers,60,1.797,34750,35060
