@@ -1,9 +1,10 @@
 # Data Science Career Copilot
 
-A lightweight Retrieval-Augmented Generation (RAG) prototype that provides career guidance for aspiring data scientists using curated labor market data from BLS and Glassdoor.
+A lightweight Retrieval-Augmented Generation (RAG) prototype that provides career guidance for aspiring data scientists using curated 2024 labor market data.  The chatbot combines structured salary statistics from BLS and Glassdoor with skill signals mined from a job postings corpus.
 
 ## Features
 
+- **Job Posting Skill Insights**: Skill-focused RAG corpus built from the 2024 job postings dataset
 - **Dual Data Sources**: JSON corpus or SQLite database with FTS indexing
 - **Transparent Citations**: All responses include explicit source references
 - **RESTful API**: `/ask` endpoint for programmatic access
@@ -17,6 +18,10 @@ A lightweight Retrieval-Augmented Generation (RAG) prototype that provides caree
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+
+# Build the job postings RAG corpus (writes data/rag_corpus.json)
+python scripts/build_jobpostings_corpus.py
+
 export FLASK_APP=app.app
 flask run --host=127.0.0.1
 ```
@@ -30,7 +35,10 @@ For better performance with larger datasets:
 # Install additional dependencies
 pip install pandas scikit-learn
 
-# Build the database
+# Generate the JSON corpus (if not already built)
+python scripts/build_jobpostings_corpus.py
+
+# Build the database (filters the CSVs to 2024 where applicable)
 python scripts/create_db.py
 
 # Run with database backend
@@ -81,6 +89,7 @@ Content-Type: application/json
 │   └── labor_market.db     # Generated SQLite database
 ├── scripts/
 │   ├── create_db.py        # Database creation utility
+│   ├── build_jobpostings_corpus.py  # Generate skill-focused RAG corpus
 │   └── supervise_flask.py  # Process supervisor
 └── requirements.txt        # Python dependencies
 ```
@@ -112,10 +121,12 @@ Content-Type: application/json
 - `PORT`: Server port (default: 5000)
 
 ### Database Tables
-The system uses three main data sources:
-- `glassdoor_salary`: Salary insights from Glassdoor
-- `bls_macro_indicators`: BLS economic indicators  
-- `oews_salary`: Occupational Employment and Wage Statistics
+The structured SQL layer uses three main data sources:
+- `glassdoor_salary`: Salary insights from Glassdoor (2024 entries only)
+- `bls_macro_indicators`: BLS economic indicators (filtered to 2024)
+- `oews_salary`: Occupational Employment and Wage Statistics by state (2024)
+
+Skill-centric answers are powered by the `data/rag_corpus.json` corpus, generated from the 2024 job postings dataset via `scripts/build_jobpostings_corpus.py`.
 
 ## Advanced Features
 

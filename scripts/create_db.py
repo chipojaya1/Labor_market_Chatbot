@@ -13,8 +13,9 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import re
 from pathlib import Path
-from typing import Any, Dict, Iterable
+from typing import Dict
 
 import pandas as pd
 
@@ -25,7 +26,7 @@ DB_PATH = DATA / "labor_market.db"
 CSV_TABLES = {
     "glassdoor_salary": "Glassdoor_Salary_Cleaned_Version.csv",
     "bls_macro_indicators": "bls_macro_indicators_cleaned.csv",
-    "oews_salary": "oews_cleaned_2024.csv",
+    "oews_salary": "OEWS_State_Cleaned.csv",
 }
 
 RAG_CORPUS = DATA / "rag_corpus.json"
@@ -46,8 +47,20 @@ def create_db(db_path: Path = DB_PATH) -> None:
                 raise FileNotFoundError(f"Missing CSV: {csv_path}")
             print(f"Loading {csv_path} into table {table_name}...")
             df = pd.read_csv(csv_path)
-            # normalise column names minimally
-            df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
+
+            # Drop unnamed columns that originate from the CSV index
+            df = df.loc[:, ~df.columns.astype(str).str.match(r"^Unnamed", na=False)]
+
+            if table_name == "bls_macro_indicators" and "year" in df.columns:
+                df = df[df["year"] == 2024]
+
+            # Normalise column names to safe SQL identifiers
+            normalised_columns = []
+            for column in df.columns:
+                cleaned = re.sub(r"[^0-9a-zA-Z]+", "_", str(column).strip().lower()).strip("_")
+                normalised_columns.append(cleaned or "column")
+            df.columns = normalised_columns
+
             df.to_sql(table_name, conn, index=False)
             # Do not create an index on the implicit rowid pseudo-column; some
             # SQLite builds and CSV-to-SQL flows make this invalid. If you need

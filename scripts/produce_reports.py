@@ -21,19 +21,25 @@ OUT.mkdir(exist_ok=True)
 
 CSV_TABLES = {
     "glassdoor_salary": "Glassdoor_Salary_Cleaned_Version.csv",
-    "oews_salary": "oews_cleaned_2024.csv",
+    "oews_salary": "OEWS_State_Cleaned.csv",
 }
 
 
 def report_top_occupations_oews():
     path = DATA / CSV_TABLES["oews_salary"]
     df = pd.read_csv(path)
-    grp = df.groupby("Occupation", dropna=True).agg({"Total_Jobs": "sum", "Average_Salary": "mean"})
-    top = grp.sort_values("Total_Jobs", ascending=False).head(15)
+    df = df.loc[:, ~df.columns.astype(str).str.match(r"^Unnamed", na=False)]
+
+    occ_col = "Occupation" if "Occupation" in df.columns else "OCC_TITLE"
+    jobs_col = "Total_Jobs" if "Total_Jobs" in df.columns else "TOT_EMP"
+    avg_col = "Average_Salary" if "Average_Salary" in df.columns else "A_MEAN"
+
+    grp = df.groupby(occ_col, dropna=True).agg({jobs_col: "sum", avg_col: "mean"})
+    top = grp.sort_values(jobs_col, ascending=False).head(15)
     top.to_csv(OUT / "oews_top_occupations.csv")
 
     plt.figure(figsize=(8, 6))
-    top["Total_Jobs"].sort_values().plot.barh()
+    top[jobs_col].sort_values().plot.barh()
     plt.title("Top occupations by estimated employment (OEWS)")
     plt.tight_layout()
     plt.savefig(OUT / "oews_top_occupations.png")

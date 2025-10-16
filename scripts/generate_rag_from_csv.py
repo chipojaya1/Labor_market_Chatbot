@@ -30,7 +30,7 @@ OUT_JSON = DATA / "rag_corpus_generated.json"
 CSV_TABLES = {
     "glassdoor_salary": "Glassdoor_Salary_Cleaned_Version.csv",
     "bls_macro_indicators": "bls_macro_indicators_cleaned.csv",
-    "oews_salary": "oews_cleaned_2024.csv",
+    "oews_salary": "OEWS_State_Cleaned.csv",
 }
 
 
@@ -134,49 +134,72 @@ def main() -> None:
         # Additional generated documents: per-occupation and per-region analysis
         try:
             if table_name == "oews_salary":
-                # Per-occupation top summaries (limit top 10 occupations by jobs)
-                grp = df.groupby("Occupation", dropna=True, as_index=False)
-                occ_stats = grp.agg({"Total_Jobs": "sum", "Average_Salary": "mean", "Median_Salary": "mean"})
-                occ_stats = occ_stats.sort_values("Total_Jobs", ascending=False).head(10)
-                for _, row in occ_stats.iterrows():
-                    occ = row["Occupation"]
-                    content = (
-                        f"Occupation: {occ}\nTotal jobs (approx): {int(row['Total_Jobs'])}\n"
-                        f"Avg salary: {row['Average_Salary']:.2f} | Median salary: {row['Median_Salary']:.2f}"
-                    )
-                    docs.append(
-                        {
-                            "id": f"oews_occ::{occ}",
-                            "title": f"OEWS summary: {occ}",
-                            "summary": f"OEWS aggregate for {occ}",
-                            "content": content,
-                            "source_name": "BLS OEWS",
-                            "source_url": "",
-                            "last_updated": "generated",
-                        }
-                    )
+                occ_col = "Occupation" if "Occupation" in df.columns else "OCC_TITLE"
+                jobs_col = "Total_Jobs" if "Total_Jobs" in df.columns else "TOT_EMP"
+                avg_col = "Average_Salary" if "Average_Salary" in df.columns else "A_MEAN"
+                median_col = "Median_Salary" if "Median_Salary" in df.columns else "A_MEDIAN"
+                loc_col = "Location" if "Location" in df.columns else "AREA_TITLE"
 
-                # Per-region top locations (limit top 6 locations)
-                loc_grp = df.groupby("Location", dropna=True, as_index=False)
-                loc_stats = loc_grp.agg({"Total_Jobs": "sum", "Average_Salary": "mean"})
-                loc_stats = loc_stats.sort_values("Total_Jobs", ascending=False).head(6)
-                for _, row in loc_stats.iterrows():
-                    loc = row["Location"]
-                    content = (
-                        f"Location: {loc}\nTotal jobs (approx): {int(row['Total_Jobs'])}\n"
-                        f"Avg salary: {row['Average_Salary']:.2f}"
-                    )
-                    docs.append(
-                        {
-                            "id": f"oews_loc::{loc}",
-                            "title": f"OEWS location summary: {loc}",
-                            "summary": f"OEWS aggregate for {loc}",
-                            "content": content,
-                            "source_name": "BLS OEWS",
-                            "source_url": "",
-                            "last_updated": "generated",
-                        }
-                    )
+                if {occ_col, jobs_col}.issubset(df.columns):
+                    grp = df.groupby(occ_col, dropna=True, as_index=False)
+                    agg_map = {jobs_col: "sum"}
+                    if avg_col in df.columns:
+                        agg_map[avg_col] = "mean"
+                    if median_col in df.columns:
+                        agg_map[median_col] = "mean"
+
+                    occ_stats = grp.agg(agg_map)
+                    occ_stats = occ_stats.sort_values(jobs_col, ascending=False).head(10)
+                    for _, row in occ_stats.iterrows():
+                        occ = row[occ_col]
+                        lines = [
+                            f"Occupation: {occ}",
+                            f"Total jobs (approx): {int(row[jobs_col])}",
+                        ]
+                        if avg_col in row:
+                            lines.append(f"Avg salary: {row[avg_col]:.2f}")
+                        if median_col in row:
+                            lines.append(f"Median salary: {row[median_col]:.2f}")
+                        content = "\n".join(lines)
+                        docs.append(
+                            {
+                                "id": f"oews_occ::{occ}",
+                                "title": f"OEWS summary: {occ}",
+                                "summary": f"OEWS aggregate for {occ}",
+                                "content": content,
+                                "source_name": "BLS OEWS",
+                                "source_url": "",
+                                "last_updated": "generated",
+                            }
+                        )
+
+                if {loc_col, jobs_col}.issubset(df.columns):
+                    loc_grp = df.groupby(loc_col, dropna=True, as_index=False)
+                    loc_agg = {jobs_col: "sum"}
+                    if avg_col in df.columns:
+                        loc_agg[avg_col] = "mean"
+                    loc_stats = loc_grp.agg(loc_agg)
+                    loc_stats = loc_stats.sort_values(jobs_col, ascending=False).head(6)
+                    for _, row in loc_stats.iterrows():
+                        loc = row[loc_col]
+                        lines = [
+                            f"Location: {loc}",
+                            f"Total jobs (approx): {int(row[jobs_col])}",
+                        ]
+                        if avg_col in row:
+                            lines.append(f"Avg salary: {row[avg_col]:.2f}")
+                        content = "\n".join(lines)
+                        docs.append(
+                            {
+                                "id": f"oews_loc::{loc}",
+                                "title": f"OEWS location summary: {loc}",
+                                "summary": f"OEWS aggregate for {loc}",
+                                "content": content,
+                                "source_name": "BLS OEWS",
+                                "source_url": "",
+                                "last_updated": "generated",
+                            }
+                        )
 
             if table_name == "glassdoor_salary":
                 # Per-state skill prevalence (based on skill flags like python_yn, R_yn, aws, spark, excel)
